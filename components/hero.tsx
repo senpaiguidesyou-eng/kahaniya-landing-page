@@ -31,7 +31,7 @@ export function Hero() {
 
         <div className="flex items-center justify-center pt-8">
           <button className="px-10 py-3.5 border border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-black transition-all duration-300 text-sm uppercase tracking-widest">
-            EXPLORE THE EXPERIENCE
+            EXPLORE THE EXPERIENCE NOW
           </button>
         </div>
       </div>
