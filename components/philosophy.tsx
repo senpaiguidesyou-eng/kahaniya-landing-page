@@ -39,18 +39,18 @@ export function Philosophy() {
             <div className="text-xs text-zinc-600 uppercase tracking-wider">The Abyss</div>
           </Card>
 
-          <Card className="bg-gradient-to-br from-amber-950/40 to-amber-900/20 border-amber-900/60 p-8 space-y-4 relative overflow-hidden shadow-xl shadow-amber-950/50">
-            <div className="absolute inset-0 bg-amber-600/10" />
-            <div className="relative">
-              <div className="w-12 h-12 rounded-full bg-amber-900/40 flex items-center justify-center ring-2 ring-amber-600/40">
-                <Sparkles className="w-6 h-6 text-amber-500" />
+          <Card className="bg-gradient-to-br from-[#b79c5a]/40 to-[#b79c5a]/20 border-[#b79c5a]/60 p-8 space-y-4 relative overflow-hidden shadow-xl shadow-[#b79c5a]/50">
+            <div className="absolute inset-0 bg-[#b79c5a]/10" />
+            <div className="relative z-10">
+              <div className="w-12 h-12 rounded-full bg-[#b79c5a]/40 flex items-center justify-center ring-2 ring-[#b79c5a]/40">
+                <Sparkles className="w-6 h-6 text-[#b79c5a]" />
               </div>
               <h3 className="font-semibold text-xl text-amber-100 mt-4">Kahaania</h3>
               <p className="text-sm text-zinc-200 leading-relaxed mt-4">
                 A private haven. Where every memory is honored. Where your story unfolds with the reverence of a
                 masterpiece.
               </p>
-              <div className="text-xs text-amber-500 uppercase tracking-wider mt-4 font-semibold">Your Sanctuary</div>
+              <div className="text-xs text-[#b79c5a] uppercase tracking-wider mt-4 font-semibold">Your Sanctuary</div>
             </div>
           </Card>
         </div>
