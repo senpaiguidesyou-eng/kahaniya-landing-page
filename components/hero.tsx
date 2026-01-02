@@ -21,16 +21,22 @@ export function Hero() {
         </h1>
 
 
-        <p className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto leading-relaxed">
-          A private, cinematic website that turns your photos and videos into seasons and episodes. <span className="text-[#b79c5a]">Because some moments are meant to stay.</span>
+        <p className="text-lg md:text-xl text-white max-w-xl mx-auto leading-relaxed">
+          A private, cinematic website that turns your photos and videos into seasons and episodes. <br /> Because some moments are meant to stay.
         </p>
 
-        <div className="flex items-center justify-center pt-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8">
           <a
             href="#offering"
-            className="px-10 py-3.5 border border-[#b79c5a] text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all duration-300 text-sm uppercase tracking-widest inline-block"
+            className="px-8 py-3.5 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-sm uppercase tracking-widest font-medium"
           >
             EXPLORE THE EXPERIENCE NOW
+          </a>
+          <a
+            href="#pricing"
+            className="px-8 py-3.5 bg-black border border-[#b79c5a] text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all duration-300 text-sm uppercase tracking-widest"
+          >
+            Check Out The Pricing
           </a>
         </div>
       </div>

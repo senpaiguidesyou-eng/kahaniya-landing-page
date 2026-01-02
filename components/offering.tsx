@@ -44,7 +44,7 @@ export function Offering() {
   }, [])
 
   return (
-    <section id="offering" className="relative pt-0 pb-10 px-6 bg-zinc-950/30 -mt-10">
+    <section id="offering" className="relative pt-0 pb-10 px-6 bg-zinc-950/30 -mt-10 scroll-mt-32">
       {/* Subtle star particles background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.02),transparent_50%)]">
         <div
