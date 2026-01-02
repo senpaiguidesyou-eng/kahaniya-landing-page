@@ -75,9 +75,9 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
-  --font-mono: "Geist Mono", "Geist Mono Fallback";
-  --font-serif: "Playfair Display", "Georgia", "serif";
+  --font-sans: "Arial", "sans-serif";
+  --font-mono: "Courier New", "monospace";
+  --font-serif: "Arial", "sans-serif";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -126,9 +126,9 @@
   }
 
   :root {
-    /* Updated gold color to #E6BE77 */
-    --gold: #e6be77;
-    --gold-light: #f0d199;
-    --gold-dark: #d4a855;
+    /* Updated gold color to #b79c5a */
+    --gold: #b79c5a;
+    --gold-light: #cbb47c;
+    --gold-dark: #8f7943;
   }
 }

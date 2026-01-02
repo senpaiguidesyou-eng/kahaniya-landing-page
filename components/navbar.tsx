@@ -20,15 +20,17 @@ export function Navbar() {
         }`}
     >
       <div className="container mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
-        <Link href="/" className="font-serif text-2xl font-normal tracking-tight text-amber-500">
-          Kahaania
+        <Link href="/" className="block relative h-10 w-40">
+          <img
+            src="https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/kahaania+transparent.png"
+            alt="Kahaania"
+            className="object-contain w-full h-full"
+          />
         </Link>
-
         <div className="hidden md:flex items-center gap-12">
-
           <Link
             href="#create"
-            className="text-sm uppercase tracking-wider text-zinc-400 hover:text-white transition-colors border border-amber-500/50 hover:border-amber-500 px-4 py-2 rounded"
+            className="text-sm uppercase tracking-wider text-zinc-400 hover:text-white transition-colors border border-[#b79c5a]/50 hover:border-[#b79c5a] px-4 py-2 rounded"
           >
             Begin Your Story
           </Link>

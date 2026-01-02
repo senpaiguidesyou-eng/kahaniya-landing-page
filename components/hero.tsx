@@ -14,25 +14,24 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 text-center max-w-5xl mx-auto space-y-8">
-        <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-amber-600 font-light">
-          Because some moments are meant to stay.
-        </p>
-
-        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-normal text-white leading-tight text-balance">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight leading-none">
           Preserving Emotions,
           <br />
-          Not Just Files.
+          <span className="text-[#b79c5a]">Not Just Files.</span>
         </h1>
 
-        <p className="text-sm md:text-base text-zinc-300 max-w-3xl mx-auto leading-relaxed text-balance pt-4">
-          A private, cinematic website that turns your photos and videos into seasons and episodes - designed to be
-          watched, not downloaded.
+
+        <p className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto leading-relaxed">
+          A private, cinematic website that turns your photos and videos into seasons and episodes. <span className="text-[#b79c5a]">Because some moments are meant to stay.</span>
         </p>
 
         <div className="flex items-center justify-center pt-8">
-          <button className="px-10 py-3.5 border border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-black transition-all duration-300 text-sm uppercase tracking-widest">
+          <a
+            href="#offering"
+            className="px-10 py-3.5 border border-[#b79c5a] text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all duration-300 text-sm uppercase tracking-widest inline-block"
+          >
             EXPLORE THE EXPERIENCE NOW
-          </button>
+          </a>
         </div>
       </div>
     </section>

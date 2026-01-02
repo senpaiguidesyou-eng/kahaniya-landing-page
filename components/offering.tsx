@@ -8,20 +8,22 @@ export function Offering() {
 
   const images = [
     {
-      src: "/images/gemini-generated-image-ooc3yoooc3yoooc3.jpeg",
-      alt: "PRIYAFLIX - The Priya Chronicles: A Love Story",
+      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Birthday.png",
+      alt: "Birthdays",
+      category: "Birthdays",
+      subtext: "Video wishes, reactions, throwback photos turned into motion, moments from the day, and messages meant for later—all coming together as one story.",
     },
     {
       src: "/images/gemini-generated-image-cmepsncmepsncmep.jpeg",
-      alt: "RIYAFLIX - A Year of Us",
+      alt: "For Your Loved Ones",
+      category: "For Your Loved Ones",
+      subtext: "Short clips from first dates, movie nights, café chats, bowling games, match days, trips, and everyday moments that define your time together.",
     },
     {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
-      alt: "TRAVEL - Our Adventures",
-    },
-    {
-      src: "/images/gemini-generated-image-a9i71na9i71na9i7.jpeg",
-      alt: "SAKSHIFLIX - Sakshi's 24th celebration",
+      alt: "Travel Memories",
+      category: "Travel Memories",
+      subtext: "Journey clips, street walks, hotel views, sunsets, conversations, and photos brought to life as video—capturing how the place felt, not just how it looked.",
     },
   ]
 
@@ -42,7 +44,7 @@ export function Offering() {
   }, [])
 
   return (
-    <section className="relative pt-0 pb-10 px-6 bg-zinc-950/30 -mt-10">
+    <section id="offering" className="relative pt-0 pb-10 px-6 bg-zinc-950/30 -mt-10">
       {/* Subtle star particles background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.02),transparent_50%)]">
         <div
@@ -56,17 +58,14 @@ export function Offering() {
       </div>
 
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="text-center space-y-4 mb-20">
-          <p className="text-xs uppercase tracking-[0.3em] text-amber-600 font-light">What You Leave Behind</p>
-        </div>
-
-        <div className="flex justify-center items-center">
-          {/* Left Column - Feature Cards */}
 
 
-          {/* Right Column - Netflix Mockup Carousel */}
-          <div className="relative group">
-            <div className="relative overflow-hidden rounded-lg shadow-2xl">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
+
+
+          {/* Left Column - Wrapper for Carousel */}
+          <div className="relative group w-full lg:w-3/5">
+            <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
               {images.map((image, index) => (
                 <img
                   key={index}
@@ -100,12 +99,22 @@ export function Offering() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? "bg-amber-600 w-8" : "bg-white/50"
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? "bg-[#b79c5a] w-8" : "bg-white/50"
                     }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}
             </div>
+          </div>
+
+          {/* Right Column - Dynamic Header */}
+          <div className="text-center lg:text-left transition-all duration-500 ease-in-out w-full lg:w-2/5 max-w-md">
+            <h3 className="text-2xl md:text-3xl font-serif text-[#b79c5a] font-bold mb-3">
+              {images[currentSlide].category}
+            </h3>
+            <p className="text-white text-base md:text-lg font-normal">
+              {images[currentSlide].subtext}
+            </p>
           </div>
         </div>
       </div>
