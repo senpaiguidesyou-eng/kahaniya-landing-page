@@ -1,15 +1,22 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Playfair_Display } from "next/font/google"
+import { Geist, Geist_Mono, Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _playfair = Playfair_Display({ subsets: ["latin"] })
+const _playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+})
+const _inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+})
 
 export const metadata: Metadata = {
-  title: "Kahaniya - Elevate fleeting moments into a cinematic legacy",
+  title: "Kahaania - Elevate fleeting moments into a cinematic legacy",
   description:
     "The Archive of Your Life. A premium Memory-as-a-Service platform designed for privacy, dignity, and cinematic storytelling.",
   generator: "v0.app",
@@ -39,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`font-sans antialiased`}>
+      <body className={`${_inter.variable} ${_playfair.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

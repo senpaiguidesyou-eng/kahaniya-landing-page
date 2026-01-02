@@ -8,16 +8,20 @@ export function Offering() {
 
   const images = [
     {
-      src: "/images/gemini-generated-image-a9i71na9i71na9i7.jpeg",
-      alt: "SAKSHIFLIX - Sakshi's 24th celebration",
-    },
-    {
       src: "/images/gemini-generated-image-ooc3yoooc3yoooc3.jpeg",
       alt: "PRIYAFLIX - The Priya Chronicles: A Love Story",
     },
     {
       src: "/images/gemini-generated-image-cmepsncmepsncmep.jpeg",
       alt: "RIYAFLIX - A Year of Us",
+    },
+    {
+      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
+      alt: "TRAVEL - Our Adventures",
+    },
+    {
+      src: "/images/gemini-generated-image-a9i71na9i71na9i7.jpeg",
+      alt: "SAKSHIFLIX - Sakshi's 24th celebration",
     },
   ]
 
@@ -38,7 +42,7 @@ export function Offering() {
   }, [])
 
   return (
-    <section className="relative py-32 px-6 bg-zinc-950/30">
+    <section className="relative pt-0 pb-10 px-6 bg-zinc-950/30 -mt-10">
       {/* Subtle star particles background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.02),transparent_50%)]">
         <div
@@ -53,45 +57,12 @@ export function Offering() {
 
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center space-y-4 mb-20">
-          <p className="text-xs uppercase tracking-[0.3em] text-amber-600 font-light">THE OFFERING</p>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-white text-balance">
-            A Digital Heirloom
-          </h2>
+          <p className="text-xs uppercase tracking-[0.3em] text-amber-600 font-light">What You Leave Behind</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-center items-center">
           {/* Left Column - Feature Cards */}
-          <div className="space-y-6">
-            {/* Made to be Watched Together */}
-            <div className="border border-amber-900/30 p-10 space-y-4 bg-black/50">
-              <Sparkles className="w-6 h-6 text-amber-600" />
-              <h3 className="font-serif text-2xl text-white">Made to be Watched Together</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                A Netflix-style interface dedicated entirely to the couple. No ads, no distractions. Just their story in
-                4K.
-              </p>
-            </div>
 
-            {/* Every Moment Has Its Place */}
-            <div className="border border-zinc-800 p-10 space-y-4 bg-black/30">
-              <Sparkles className="w-6 h-6 text-amber-600" />
-              <h3 className="font-serif text-2xl text-white">Every Moment Has Its Place</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                We organize events into "Seasons" and "Episodes". The Haldi. The Sangeet. The Reception—organized
-                beautifully.
-              </p>
-            </div>
-
-            {/* Only for Those Who Matter */}
-            <div className="border border-zinc-800 p-10 space-y-4 bg-black/30">
-              <Lock className="w-6 h-6 text-zinc-400" />
-              <h3 className="font-serif text-2xl text-white">Only for Those Who Matter</h3>
-              <p className="text-zinc-400 leading-relaxed">
-                Password-protected access ensures intimate moments stay private. Share the "Key" only with those who
-                matter.
-              </p>
-            </div>
-          </div>
 
           {/* Right Column - Netflix Mockup Carousel */}
           <div className="relative group">
@@ -101,9 +72,8 @@ export function Offering() {
                   key={index}
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
-                  className={`w-full h-auto transition-opacity duration-500 ${
-                    index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
-                  }`}
+                  className={`w-full h-auto transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
+                    }`}
                 />
               ))}
             </div>
@@ -130,9 +100,8 @@ export function Offering() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentSlide ? "bg-amber-600 w-8" : "bg-white/50"
-                  }`}
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? "bg-amber-600 w-8" : "bg-white/50"
+                    }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
               ))}

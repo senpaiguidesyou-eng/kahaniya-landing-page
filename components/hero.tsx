@@ -15,7 +15,7 @@ export function Hero() {
 
       <div className="relative z-10 text-center max-w-5xl mx-auto space-y-8">
         <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-amber-600 font-light">
-          INTRODUCING MEMORY AS A SERVICE
+          Because some moments are meant to stay.
         </p>
 
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-normal text-white leading-tight text-balance">
@@ -31,7 +31,7 @@ export function Hero() {
 
         <div className="flex items-center justify-center pt-8">
           <button className="px-10 py-3.5 border border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-black transition-all duration-300 text-sm uppercase tracking-widest">
-            VIEW THE CONCEPT
+            EXPLORE THE EXPERIENCE
           </button>
         </div>
       </div>

@@ -45,7 +45,7 @@ export function Philosophy() {
               <div className="w-12 h-12 rounded-full bg-amber-900/40 flex items-center justify-center ring-2 ring-amber-600/40">
                 <Sparkles className="w-6 h-6 text-amber-500" />
               </div>
-              <h3 className="font-semibold text-xl text-amber-100 mt-4">Kahaniya</h3>
+              <h3 className="font-semibold text-xl text-amber-100 mt-4">Kahaania</h3>
               <p className="text-sm text-zinc-200 leading-relaxed mt-4">
                 A private haven. Where every memory is honored. Where your story unfolds with the reverence of a
                 masterpiece.

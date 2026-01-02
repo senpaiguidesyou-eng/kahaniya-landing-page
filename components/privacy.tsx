@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Lock, EyeOff } from "lucide-react"
+import { Lock, EyeOff, Sparkles } from "lucide-react"
 
 export function Privacy() {
   return (
@@ -29,12 +29,34 @@ export function Privacy() {
 
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border-amber-900/20 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-950/30 to-zinc-900 flex items-center justify-center ring-2 ring-amber-900/30">
+              <Sparkles className="w-7 h-7 text-amber-500" />
+            </div>
+            <h3 className="font-serif text-2xl font-semibold text-white">Made to be Watched Together</h3>
+            <p className="text-zinc-400 leading-relaxed">
+              A Netflix-style interface dedicated entirely to the couple. No ads, no distractions. Just their story in
+              4K.
+            </p>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border-amber-900/20 p-8 space-y-4 shadow-xl">
+            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-950/30 to-zinc-900 flex items-center justify-center ring-2 ring-amber-900/30">
               <Lock className="w-7 h-7 text-amber-500" />
             </div>
             <h3 className="font-serif text-2xl font-semibold text-white">You Hold Every Key</h3>
             <p className="text-zinc-400 leading-relaxed">
               Absolute sovereignty. Password-protected chapters. Time-limited access. Your legacy, your rules—guarded
               with the reverence it deserves.
+            </p>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border-amber-900/20 p-8 space-y-4 shadow-xl">
+            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-950/30 to-zinc-900 flex items-center justify-center ring-2 ring-amber-900/30">
+              <Sparkles className="w-7 h-7 text-amber-500" />
+            </div>
+            <h3 className="font-serif text-2xl font-semibold text-white">Every Moment Has Its Place</h3>
+            <p className="text-zinc-400 leading-relaxed">
+              We organize your memories into Seasons and Episodes - each moment given the space it deserves, beautifully
+              and intentionally.
             </p>
           </Card>
         </div>

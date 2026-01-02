@@ -120,9 +120,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-black text-foreground;
   }
+
   :root {
     /* Updated gold color to #E6BE77 */
     --gold: #e6be77;
