@@ -18,7 +18,7 @@ export default function PrivacyPage() {
                             Privacy, by Design
                         </h1>
                         <div className="space-y-4">
-                            <p className="text-lg md:text-2xl text-[#b79c5a] font-light">
+                            <p className="text-lg md:text-2xl text-[#f1c60d] font-light">
                                 At Kahaania, privacy isn’t a feature.
                                 <br />
                                 It’s the foundation.
@@ -154,7 +154,7 @@ export default function PrivacyPage() {
                             <h2 className="text-2xl font-serif text-white">Questions or Concerns?</h2>
                             <div className="space-y-4 text-zinc-400 leading-relaxed">
                                 <p>If something doesn’t feel right, ask us.</p>
-                                <a href="mailto:hello@kahaania.com" className="text-[#b79c5a] hover:underline text-lg block py-2">
+                                <a href="mailto:hello@kahaania.com" className="text-[#f1c60d] hover:underline text-lg block py-2">
                                     📩 hello@kahaania.com
                                 </a>
                                 <p>We’d rather explain than hide behind fine print.</p>
@@ -167,7 +167,7 @@ export default function PrivacyPage() {
                             <p className="text-lg text-zinc-300">
                                 Your memories are not a product.
                                 <br />
-                                <span className="text-[#b79c5a]">They’re a trust.</span>
+                                <span className="text-[#f1c60d]">They’re a trust.</span>
                             </p>
                             <p className="text-zinc-400">And we intend to keep it that way.</p>
                         </div>

@@ -23,7 +23,7 @@ export function Privacy() {
           {/* Card 1: Every Moment Has Its Place */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <Footprints className="w-7 h-7 text-[#b79c5a]" />
+              <Footprints className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.5} />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white"
@@ -40,7 +40,7 @@ export function Privacy() {
           {/* Card 2: Made to be Watched Together */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <HeartHandshake className="w-7 h-7 text-[#b79c5a]" />
+              <HeartHandshake className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.5} />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white mb-2"
@@ -56,7 +56,7 @@ export function Privacy() {
           {/* Card 3: You Hold Every Key */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <Lock className="w-7 h-7 text-[#b79c5a]" />
+              <Lock className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.5} />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white"
@@ -73,7 +73,7 @@ export function Privacy() {
         <div className="flex justify-center pt-8">
           <Link
             href="/pricing"
-            className="px-6 py-2.5 md:px-8 md:py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-xs md:text-sm uppercase tracking-widest font-medium rounded"
+            className="px-6 py-2.5 md:px-8 md:py-3 bg-gradient-to-r from-[#f1c60d] to-[#fcd432] text-black hover:from-[#dcb50b] hover:to-[#eec92e] transition-all duration-300 text-xs md:text-sm uppercase tracking-widest font-medium rounded"
           >
             Begin Your Story
           </Link>

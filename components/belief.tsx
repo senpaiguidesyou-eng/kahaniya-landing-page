@@ -15,7 +15,7 @@ export function Belief() {
 
       <div className="container mx-auto max-w-[720px] relative z-10 flex flex-col items-center">
         {/* Section Label */}
-        <p className="font-sans text-[12px] lg:text-[14px] font-medium tracking-[0.18em] uppercase text-[#b79c5a] mb-8 lg:mb-8 text-center">
+        <p className="font-sans text-[12px] lg:text-[14px] font-medium tracking-[0.18em] uppercase text-[#f1c60d] mb-8 lg:mb-8 text-center">
           Our Belief
         </p>
 

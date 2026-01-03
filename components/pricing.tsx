@@ -9,27 +9,27 @@ export function Pricing() {
 
                 {/* Header & Definitions */}
                 <div className="text-center space-y-8 max-w-6xl mx-auto">
-                    <p className="text-sm uppercase tracking-[0.2em] text-[#b79c5a]">
+                    <p className="text-sm uppercase tracking-[0.2em] text-[#f1c60d]">
                         You pay once, it’s yours forever.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-left bg-zinc-900/40 p-6 md:p-8 rounded-2xl border border-zinc-800 backdrop-blur-sm">
                         <div className="space-y-2">
-                            <span className="text-[#b79c5a] font-serif text-lg block">Story</span>
+                            <span className="text-[#f1c60d] font-serif text-lg block">Story</span>
                             <p className="text-zinc-400 text-sm max-w-[250px]">
                                 Your own private Netflix-themed website where all your memories or chapters live together and can be revisited anytime.
                             </p>
                         </div>
                         <div className="w-px h-auto bg-zinc-800 hidden md:block"></div>
                         <div className="space-y-2">
-                            <span className="text-[#b79c5a] font-serif text-lg block">Chapter</span>
+                            <span className="text-[#f1c60d] font-serif text-lg block">Chapter</span>
                             <p className="text-zinc-400 text-sm max-w-[250px]">
                                 A meaningful part of your life such as a birthday, a trip, a relationship, a year, or a milestone.
                             </p>
                         </div>
                         <div className="w-px h-auto bg-zinc-800 hidden md:block"></div>
                         <div className="space-y-2">
-                            <span className="text-[#b79c5a] font-serif text-lg block">Moment</span>
+                            <span className="text-[#f1c60d] font-serif text-lg block">Moment</span>
                             <p className="text-zinc-400 text-sm max-w-[250px]">
                                 A short cinematic clip capturing a core memory such as a sunset, a message from someone you love, a shared laugh, or a moment you wish time would pause on.
                             </p>
@@ -62,14 +62,14 @@ export function Pricing() {
                                 "A secure link, meant only for those you choose"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                                    <Check className="w-4 h-4 text-[#b79c5a] mt-0.5 shrink-0" />
+                                    <Check className="w-4 h-4 text-[#f1c60d] mt-0.5 shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
                         </ul>
 
                         <ContactModal>
-                            <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
+                            <button className="w-full py-3 border border-[#f1c60d]/50 text-[#f1c60d] hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
                                 Begin Your Story
                             </button>
                         </ContactModal>
@@ -77,7 +77,7 @@ export function Pricing() {
 
                     {/* ADD-ON SERIES */}
                     <div className="relative flex flex-col p-8 md:p-10 border border-zinc-800 bg-zinc-900/40 border-y md:border-x hover:bg-zinc-900/60 transition-colors z-10">
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#b79c5a] text-black text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#f1c60d] to-[#fcd432] text-black text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
                             Most stories grow with time.
                         </div>
                         <div className="mb-6">
@@ -100,14 +100,14 @@ export function Pricing() {
                                 "Seamlessly woven into your existing Kahaania"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                                    <Check className="w-4 h-4 text-[#b79c5a] mt-0.5 shrink-0" />
+                                    <Check className="w-4 h-4 text-[#f1c60d] mt-0.5 shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
                         </ul>
 
                         <ContactModal>
-                            <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
+                            <button className="w-full py-3 border border-[#f1c60d]/50 text-[#f1c60d] hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
                                 Continue the story
                             </button>
                         </ContactModal>
@@ -134,14 +134,14 @@ export function Pricing() {
                                 "Personally crafted, start to finish"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                                    <Check className="w-4 h-4 text-[#b79c5a] mt-0.5 shrink-0" />
+                                    <Check className="w-4 h-4 text-[#f1c60d] mt-0.5 shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
                         </ul>
 
                         <ContactModal>
-                            <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
+                            <button className="w-full py-3 border border-[#f1c60d]/50 text-[#f1c60d] hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
                                 Talk to Us
                             </button>
                         </ContactModal>
