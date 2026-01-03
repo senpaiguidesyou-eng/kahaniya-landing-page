@@ -15,7 +15,7 @@ export function Hero() {
 
       <div className="relative z-10 text-center max-w-5xl mx-auto space-y-8">
         <h1
-          className="text-[40px] md:text-[66px] lg:text-[80px] font-serif text-white tracking-tight leading-[1.1]"
+          className="text-[34px] md:text-[66px] lg:text-[80px] font-serif text-white tracking-tight leading-[1.1]"
           style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
         >
           Preserving Emotions,
@@ -24,14 +24,14 @@ export function Hero() {
         </h1>
 
 
-        <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed pt-10">
+        <p className="text-[15px] md:text-xl text-white max-w-2xl mx-auto leading-relaxed pt-10">
           A private, cinematic website that turns your photos and videos into seasons and episodes. Because some moments are meant to stay.
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8">
           <a
             href="#offering"
-            className="px-8 py-3.5 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-sm uppercase tracking-widest font-medium"
+            className="px-6 py-2.5 md:px-8 md:py-3.5 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-xs md:text-sm uppercase tracking-widest font-medium"
           >
             EXPLORE THE EXPERIENCE NOW
           </a>
