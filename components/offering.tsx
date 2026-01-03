@@ -11,19 +11,19 @@ export function Offering() {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Birthday.png",
       alt: "Birthdays",
       category: "Birthdays",
-      subtext: "Video wishes, reactions, throwback photos turned into motion, moments from the day, and messages meant for later—all coming together as one story.",
+      subtext: "Wishes captured on video, smiles you didn’t notice, photographs that move again, and messages meant for another time, gathered into one unfolding story.",
     },
     {
       src: "/images/gemini-generated-image-cmepsncmepsncmep.jpeg",
       alt: "For Your Loved Ones",
       category: "For Your Loved Ones",
-      subtext: "Short clips from first dates, movie nights, café chats, bowling games, match days, trips, and everyday moments that define your time together.",
+      subtext: "The moments that turned you and me into us.",
     },
     {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
       alt: "Travel Memories",
       category: "Travel Memories",
-      subtext: "Journey clips, street walks, hotel views, sunsets, conversations, and photos brought to life as video—capturing how the place felt, not just how it looked.",
+      subtext: "Not just places, but pauses, streets you wandered, sunsets you lingered, rooms you returned to. Memories shaped into motion, so the feeling travels back with you.",
     },
   ]
 

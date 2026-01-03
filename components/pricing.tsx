@@ -1,5 +1,6 @@
 import { Check } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { ContactModal } from "@/components/contact-modal"
 
 export function Pricing() {
     return (
@@ -9,7 +10,7 @@ export function Pricing() {
                 {/* Header & Definitions */}
                 <div className="text-center space-y-8 max-w-6xl mx-auto">
                     <p className="text-sm uppercase tracking-[0.2em] text-[#b79c5a]">
-                        No subscriptions. You pay once, it’s yours forever.
+                        You pay once, it’s yours forever.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-6 md:gap-12 text-left bg-zinc-900/40 p-6 md:p-8 rounded-2xl border border-zinc-800 backdrop-blur-sm">
@@ -67,9 +68,11 @@ export function Pricing() {
                             ))}
                         </ul>
 
-                        <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
-                            Begin This Chapter
-                        </button>
+                        <ContactModal>
+                            <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
+                                Begin This Chapter
+                            </button>
+                        </ContactModal>
                     </div>
 
                     {/* ADD-ON SERIES */}
@@ -103,9 +106,11 @@ export function Pricing() {
                             ))}
                         </ul>
 
-                        <button className="w-full py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all text-sm uppercase tracking-wider rounded font-medium">
-                            Add a New Chapter
-                        </button>
+                        <ContactModal>
+                            <button className="w-full py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all text-sm uppercase tracking-wider rounded font-medium">
+                                Continue the story
+                            </button>
+                        </ContactModal>
                     </div>
 
                     {/* ENTERPRISE */}
@@ -117,16 +122,16 @@ export function Pricing() {
 
                         <div className="mb-8 pb-8 border-b border-zinc-800">
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-light text-white">Custom</span>
+                                <span className="text-4xl font-light text-white">Curated</span>
                             </div>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-1">
                             {[
                                 "Large collections of memories",
-                                "Brand, family, or institutional archives",
+                                "Family archives",
                                 "Custom visual direction",
-                                "White-glove handling from start to finish"
+                                "Personally crafted, start to finish"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
                                     <Check className="w-4 h-4 text-[#b79c5a] mt-0.5 shrink-0" />
@@ -135,9 +140,11 @@ export function Pricing() {
                             ))}
                         </ul>
 
-                        <button className="w-full py-3 border border-zinc-700 text-zinc-300 hover:bg-zinc-800 transition-all text-sm uppercase tracking-wider rounded">
-                            Talk to Us
-                        </button>
+                        <ContactModal>
+                            <button className="w-full py-3 border border-zinc-700 text-zinc-300 hover:bg-zinc-800 transition-all text-sm uppercase tracking-wider rounded">
+                                Talk to Us
+                            </button>
+                        </ContactModal>
                     </div>
 
                 </div>
