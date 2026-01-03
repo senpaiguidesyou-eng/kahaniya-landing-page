@@ -109,7 +109,10 @@ export function Offering() {
 
           {/* Right Column - Dynamic Header */}
           <div className="text-center lg:text-left transition-all duration-500 ease-in-out w-full lg:w-2/5 max-w-md">
-            <h3 className="text-2xl md:text-3xl font-serif text-[#b79c5a] font-bold mb-3">
+            <h3
+              className="text-2xl md:text-3xl font-serif text-[#b79c5a] font-bold mb-3"
+              style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
+            >
               {images[currentSlide].category}
             </h3>
             <p className="text-white text-base md:text-lg font-normal">

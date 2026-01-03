@@ -14,15 +14,18 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 text-center max-w-5xl mx-auto space-y-8">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white tracking-tight leading-none">
+        <h1
+          className="text-[40px] md:text-[66px] lg:text-[80px] font-serif text-white tracking-tight leading-none"
+          style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
+        >
           Preserving Emotions,
           <br />
           <span className="text-[#b79c5a]">Not Just Files.</span>
         </h1>
 
 
-        <p className="text-lg md:text-xl text-white max-w-xl mx-auto leading-relaxed">
-          A private, cinematic website that turns your photos and videos into seasons and episodes. <br /> Because some moments are meant to stay.
+        <p className="text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed pt-10">
+          A private, cinematic website that turns your photos and videos into seasons and episodes. Because some moments are meant to stay.
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8">
@@ -32,12 +35,7 @@ export function Hero() {
           >
             EXPLORE THE EXPERIENCE NOW
           </a>
-          <a
-            href="#pricing"
-            className="px-8 py-3.5 bg-black border border-[#b79c5a] text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all duration-300 text-sm uppercase tracking-widest"
-          >
-            Check Out The Pricing
-          </a>
+
         </div>
       </div>
     </section>

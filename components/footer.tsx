@@ -6,7 +6,12 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 text-center md:text-left">
-            <div className="font-serif text-2xl font-bold text-white">Kahaania</div>
+            <div
+              className="font-serif text-2xl font-bold text-white"
+              style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
+            >
+              Kahaania
+            </div>
             <p className="text-sm text-zinc-500">The Archive of Your Life</p>
           </div>
 
