@@ -29,7 +29,7 @@ export function Navbar() {
         </Link>
         <div className="hidden md:flex items-center gap-12">
           <Link
-            href="#create"
+            href="/pricing"
             className="text-sm uppercase tracking-wider text-zinc-400 hover:text-white transition-colors border border-[#b79c5a]/50 hover:border-[#b79c5a] px-4 py-2 rounded"
           >
             Begin Your Story
