@@ -12,13 +12,13 @@ export default function PrivacyPage() {
                     {/* Header */}
                     <div className="space-y-6 text-center">
                         <h1
-                            className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-white leading-tight"
+                            className="font-serif text-[32px] md:text-5xl lg:text-6xl font-normal text-white leading-tight"
                             style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
                         >
                             Privacy, by Design
                         </h1>
                         <div className="space-y-4">
-                            <p className="text-xl md:text-2xl text-[#b79c5a] font-light">
+                            <p className="text-lg md:text-2xl text-[#b79c5a] font-light">
                                 At Kahaania, privacy isn’t a feature.
                                 <br />
                                 It’s the foundation.
@@ -71,7 +71,7 @@ export default function PrivacyPage() {
                                     <li className="text-white">People you explicitly share access with</li>
                                     <li className="text-white">No one else</li>
                                 </ul>
-                                <div className="pl-5 space-y-1 pt-2 border-l-2 border-[#b79c5a]/30">
+                                <div className="pl-5 space-y-1 pt-2">
                                     <p>Not advertisers.</p>
                                     <p>Not third-party platforms.</p>
                                     <p>Not random employees browsing through user data.</p>
@@ -100,16 +100,16 @@ export default function PrivacyPage() {
                                 <p>Let’s be clear:</p>
                                 <div className="grid gap-2">
                                     <div className="flex items-center gap-2">
-                                        <span className="text-red-400">✕</span> <span>We don’t sell your data</span>
+                                        <span>We don’t sell your data</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <span className="text-red-400">✕</span> <span>We don’t run ads on your Kahaania</span>
+                                        <span>We don’t run ads on your Kahaania</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <span className="text-red-400">✕</span> <span>We don’t train AI models on your videos or photos</span>
+                                        <span>We don’t train AI models on your videos or photos</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <span className="text-red-400">✕</span> <span>We don’t scan your content for insights, trends, or “engagement”</span>
+                                        <span>We don’t scan your content for insights, trends, or “engagement”</span>
                                     </div>
                                 </div>
                                 <p className="text-white text-lg pt-2 font-serif italic">Your story stays yours.</p>

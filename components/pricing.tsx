@@ -49,7 +49,7 @@ export function Pricing() {
 
                         <div className="mb-8 pb-8 border-b border-zinc-800">
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-light text-white">₹3,500</span>
+                                <span className="text-[32px] md:text-4xl font-light text-white">₹3,500</span>
                                 <span className="text-zinc-500 text-sm">/ one-time</span>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ export function Pricing() {
 
                         <ContactModal>
                             <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
-                                Begin This Chapter
+                                Begin Your Story
                             </button>
                         </ContactModal>
                     </div>
@@ -87,7 +87,7 @@ export function Pricing() {
 
                         <div className="mb-8 pb-8 border-b border-zinc-800">
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-light text-white">₹1,500</span>
+                                <span className="text-[32px] md:text-4xl font-light text-white">₹1,500</span>
                                 <span className="text-zinc-500 text-sm">/ per chapter</span>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ export function Pricing() {
                         </ul>
 
                         <ContactModal>
-                            <button className="w-full py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all text-sm uppercase tracking-wider rounded font-medium">
+                            <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
                                 Continue the story
                             </button>
                         </ContactModal>
@@ -122,7 +122,7 @@ export function Pricing() {
 
                         <div className="mb-8 pb-8 border-b border-zinc-800">
                             <div className="flex items-baseline gap-1">
-                                <span className="text-4xl font-light text-white">Curated</span>
+                                <span className="text-[32px] md:text-4xl font-light text-white">Curated</span>
                             </div>
                         </div>
 
@@ -141,7 +141,7 @@ export function Pricing() {
                         </ul>
 
                         <ContactModal>
-                            <button className="w-full py-3 border border-zinc-700 text-zinc-300 hover:bg-zinc-800 transition-all text-sm uppercase tracking-wider rounded">
+                            <button className="w-full py-3 border border-[#b79c5a]/50 text-[#b79c5a] hover:bg-[#b79c5a] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
                                 Talk to Us
                             </button>
                         </ContactModal>

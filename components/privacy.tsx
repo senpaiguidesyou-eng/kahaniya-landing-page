@@ -8,7 +8,7 @@ export function Privacy() {
       <div className="container mx-auto max-w-6xl space-y-12">
         <div className="text-center space-y-4">
           <h2
-            className="font-serif text-4xl md:text-5xl font-bold text-white text-balance"
+            className="font-serif text-[30px] md:text-5xl font-bold text-white text-balance"
             style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
           >
             Your memories are sacred ground.
@@ -73,7 +73,7 @@ export function Privacy() {
         <div className="flex justify-center pt-8">
           <Link
             href="/pricing"
-            className="px-8 py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-sm uppercase tracking-widest font-medium rounded"
+            className="px-6 py-2.5 md:px-8 md:py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-xs md:text-sm uppercase tracking-widest font-medium rounded"
           >
             Begin Your Story
           </Link>
