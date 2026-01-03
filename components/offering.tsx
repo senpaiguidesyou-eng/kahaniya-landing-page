@@ -99,7 +99,7 @@ export function Offering() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? "bg-[#b79c5a] w-8" : "bg-white/50"
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? "bg-[#f1c60d] w-8" : "bg-white/50"
                     }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
@@ -110,7 +110,7 @@ export function Offering() {
           {/* Right Column - Dynamic Header */}
           <div className="text-center lg:text-left transition-all duration-500 ease-in-out w-full lg:w-2/5 max-w-md">
             <h3
-              className="text-2xl md:text-3xl font-serif text-[#b79c5a] font-bold mb-3"
+              className="text-2xl md:text-3xl font-serif text-[#f1c60d] font-bold mb-3"
               style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
             >
               {images[currentSlide].category}

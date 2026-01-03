@@ -7,11 +7,12 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-2 text-center md:text-left">
-            <div
-              className="font-serif text-2xl font-bold text-white"
-              style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
-            >
-              Kahaania
+            <div className="relative h-14 w-56 mx-auto md:mx-0">
+              <img
+                src="https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Kahaania+Transparent2.png"
+                alt="Kahaania"
+                className="object-contain w-full h-full object-center md:object-left"
+              />
             </div>
             <p className="text-sm text-zinc-500">The Archive of Your Life</p>
           </div>

@@ -20,7 +20,7 @@ export function Hero() {
         >
           Preserving Emotions,
           <br />
-          <span className="text-[#b79c5a]">Not Just Files.</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f1c60d] to-[#fcd432]">Not Just Files.</span>
         </h1>
 
 
@@ -31,7 +31,7 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8">
           <a
             href="#offering"
-            className="px-6 py-2.5 md:px-8 md:py-3.5 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-xs md:text-sm uppercase tracking-widest font-medium"
+            className="px-6 py-2.5 md:px-8 md:py-3.5 bg-gradient-to-r from-[#f1c60d] to-[#fcd432] text-black hover:from-[#dcb50b] hover:to-[#eec92e] transition-all duration-300 text-xs md:text-sm uppercase tracking-widest font-medium"
           >
             EXPLORE THE EXPERIENCE NOW
           </a>
