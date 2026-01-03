@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card"
-import { Lock, Film, Tv } from "lucide-react"
+import Link from "next/link"
+import { Lock, HeartHandshake, Footprints } from "lucide-react"
 
 export function Privacy() {
   return (
@@ -22,7 +23,7 @@ export function Privacy() {
           {/* Card 1: Every Moment Has Its Place */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <Film className="w-7 h-7 text-[#b79c5a]" />
+              <Footprints className="w-7 h-7 text-[#b79c5a]" />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white"
@@ -39,7 +40,7 @@ export function Privacy() {
           {/* Card 2: Made to be Watched Together */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <Tv className="w-7 h-7 text-[#b79c5a]" />
+              <HeartHandshake className="w-7 h-7 text-[#b79c5a]" />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white mb-2"
@@ -48,8 +49,7 @@ export function Privacy() {
               Made to be Watched Together
             </h3>
             <p className="text-zinc-400 leading-relaxed">
-              A Netflix-style interface dedicated entirely to the couple. No ads, no distractions. Just their story in
-              4K.
+              A quiet screen, shared between two people. No noise, no interruptions, just time, memories, and each other.
             </p>
           </Card>
 
@@ -65,10 +65,18 @@ export function Privacy() {
               You Hold Every Key
             </h3>
             <p className="text-zinc-400 leading-relaxed">
-              Absolute sovereignty. Password-protected chapters. Time-limited access. Your legacy, your rules—guarded
-              with the reverence it deserves.
+              Password-protected chapters, shared only with those you choose, your story, kept private and treated with care.
             </p>
           </Card>
+        </div>
+
+        <div className="flex justify-center pt-8">
+          <Link
+            href="/pricing"
+            className="px-8 py-3 bg-[#b79c5a] text-black hover:bg-[#cbb06d] transition-all duration-300 text-sm uppercase tracking-widest font-medium rounded"
+          >
+            Begin Your Story
+          </Link>
         </div>
       </div>
     </section>

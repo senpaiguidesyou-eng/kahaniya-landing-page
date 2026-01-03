@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { ContactModal } from "@/components/contact-modal"
 
 export function Footer() {
   return (
@@ -17,12 +18,14 @@ export function Footer() {
 
           <div className="flex items-center gap-8">
 
-            <Link href="#privacy" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            <Link href="/privacy" className="text-sm text-zinc-400 hover:text-white transition-colors">
               Privacy
             </Link>
-            <Link href="#contact" className="text-sm text-zinc-400 hover:text-white transition-colors">
-              Contact
-            </Link>
+            <ContactModal>
+              <button className="text-sm text-zinc-400 hover:text-white transition-colors">
+                Contact
+              </button>
+            </ContactModal>
           </div>
         </div>
 

@@ -15,7 +15,7 @@ export function Hero() {
 
       <div className="relative z-10 text-center max-w-5xl mx-auto space-y-8">
         <h1
-          className="text-[40px] md:text-[66px] lg:text-[80px] font-serif text-white tracking-tight leading-none"
+          className="text-[40px] md:text-[66px] lg:text-[80px] font-serif text-white tracking-tight leading-[1.1]"
           style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
         >
           Preserving Emotions,
