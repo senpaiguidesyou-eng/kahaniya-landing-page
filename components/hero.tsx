@@ -25,7 +25,7 @@ export function Hero() {
 
 
         <p className="text-[15px] md:text-xl text-white max-w-2xl mx-auto leading-relaxed pt-10">
-          A private, cinematic website that turns your photos and videos into seasons and episodes. Because some moments are meant to stay.
+          A private, cinematic Netflix themed website that turns your photos and videos into seasons and episodes. Because some moments are meant to stay.
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 pt-8">

@@ -23,7 +23,7 @@ export function Privacy() {
           {/* Card 1: Every Moment Has Its Place */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <Footprints className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.5} />
+              <Footprints className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.1} />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white"
@@ -40,7 +40,7 @@ export function Privacy() {
           {/* Card 2: Made to be Watched Together */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <HeartHandshake className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.5} />
+              <HeartHandshake className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.1} />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white mb-2"
@@ -49,14 +49,14 @@ export function Privacy() {
               Made to be Watched Together
             </h3>
             <p className="text-zinc-400 leading-relaxed">
-              A quiet screen, shared between two people. No noise, no interruptions, just time, memories, and each other.
+              A quiet screen. No noise, no interruptions, just time, memories, and the presence they deserve.
             </p>
           </Card>
 
           {/* Card 3: You Hold Every Key */}
           <Card className="bg-gradient-to-br from-zinc-900/80 to-zinc-950/50 backdrop-blur-xl border border-zinc-800 p-8 space-y-4 shadow-xl">
             <div className="w-14 h-14 rounded-full bg-zinc-900 flex items-center justify-center border border-zinc-800">
-              <Lock className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.5} />
+              <Lock className="w-7 h-7 text-[#f1c60d]" strokeWidth={1.1} />
             </div>
             <h3
               className="font-serif text-xl font-semibold text-white"
