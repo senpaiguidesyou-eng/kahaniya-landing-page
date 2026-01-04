@@ -14,7 +14,7 @@ export function Footer() {
                 className="object-contain w-full h-full object-center md:object-left"
               />
             </div>
-            <p className="text-sm text-zinc-500">The Archive of Your Life</p>
+
           </div>
 
           <div className="flex items-center gap-8">

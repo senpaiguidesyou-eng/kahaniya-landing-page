@@ -58,7 +58,7 @@ export function Pricing() {
                             {[
                                 "Your private Kahaania website",
                                 "One chapter of memories",
-                                "Up to 10 carefully crafted moments",
+                                "Up to 10 carefully crafted moments (Videos/Photos)",
                                 "A secure link, meant only for those you choose"
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
