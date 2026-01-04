@@ -20,7 +20,7 @@ export function Navbar() {
         }`}
     >
       <div className="container mx-auto px-2 md:px-6 lg:px-12 py-6 flex items-center justify-between">
-        <Link href="/" className="block relative h-[45px] w-[180px] md:h-16 md:w-64 -ml-2 md:ml-0">
+        <Link href="/" className="block relative h-[35px] w-[140px] md:h-12 md:w-48 ml-2 md:ml-0">
           <img
             src="https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Kahaania+Transparent2.png"
             alt="Kahaania"
@@ -30,7 +30,7 @@ export function Navbar() {
         <div className="flex items-center gap-12">
           <Link
             href="/pricing"
-            className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3.5 py-1.5 md:px-4 md:py-2 rounded"
+            className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3.5 py-1.5 md:px-4 md:py-2 rounded mr-2 md:mr-0"
           >
             Begin Your Story
           </Link>
