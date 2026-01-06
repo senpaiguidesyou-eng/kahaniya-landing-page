@@ -10,6 +10,14 @@ const playfair = Playfair_Display({
   display: "swap",
 })
 
+export const metadata: Metadata = {
+  title: "Kahaania",
+  description: "The Archive of Your Life",
+  icons: {
+    icon: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Kahaania+Plain+Black.png",
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
