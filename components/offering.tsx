@@ -14,7 +14,7 @@ export function Offering() {
       subtext: "The moments that turned you and me into us.",
     },
     {
-      src: "/images/stories-meant-for-later.png",
+      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Future.jpg",
       alt: "Stories Meant for Later",
       category: "Stories Meant for Later",
       subtext: "Notes, memories, and moments saved for a time not yet here.",
