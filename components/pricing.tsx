@@ -48,9 +48,13 @@ export function Pricing() {
                         </div>
 
                         <div className="mb-8 pb-8 border-b border-zinc-800">
-                            <div className="flex items-baseline gap-1">
-                                <span className="text-[32px] md:text-4xl font-light text-white">₹3,500</span>
-                                <span className="text-zinc-500 text-sm">/ one-time</span>
+                            <div className="flex flex-col">
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-lg md:text-xl text-zinc-500 line-through">₹4,000</span>
+                                    <span className="text-[32px] md:text-4xl font-light text-white">₹3,499</span>
+                                    <span className="text-zinc-500 text-sm">/ one-time</span>
+                                </div>
+                                <p className="text-[#f1c60d] text-xs font-medium uppercase tracking-wider mt-2">Early bird offer</p>
                             </div>
                         </div>
 
