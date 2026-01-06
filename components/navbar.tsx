@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 
+import { ContactModal } from "@/components/contact-modal"
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
 
@@ -27,13 +29,20 @@ export function Navbar() {
             className="object-contain w-full h-full"
           />
         </Link>
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-2 md:gap-8">
           <Link
             href="/pricing"
-            className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3.5 py-1.5 md:px-4 md:py-2 rounded mr-2 md:mr-0"
+            className="hidden md:block text-[10px] md:text-sm uppercase tracking-normal md:tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3 py-1 md:px-4 md:py-2 rounded whitespace-nowrap"
           >
             Begin Your Story
           </Link>
+          <ContactModal>
+            <button
+              className="text-[10px] md:text-sm uppercase tracking-normal md:tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3 py-1 md:px-4 md:py-2 rounded mr-2 md:mr-0 whitespace-nowrap"
+            >
+              Contact Us
+            </button>
+          </ContactModal>
         </div>
       </div>
     </nav>

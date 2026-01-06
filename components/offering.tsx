@@ -8,22 +8,28 @@ export function Offering() {
 
   const images = [
     {
-      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Birthday.png",
-      alt: "Birthdays",
-      category: "Birthdays",
-      subtext: "Wishes captured on video, smiles you didn’t notice, photographs that move again, and messages meant for another time, gathered into one unfolding story.",
-    },
-    {
-      src: "/images/gemini-generated-image-cmepsncmepsncmep.jpeg",
+      src: "/images/priyaflix-love-story.jpg",
       alt: "For Your Loved Ones",
       category: "For Your Loved Ones",
       subtext: "The moments that turned you and me into us.",
+    },
+    {
+      src: "/images/stories-meant-for-later.png",
+      alt: "Stories Meant for Later",
+      category: "Stories Meant for Later",
+      subtext: "Notes, memories, and moments saved for a time not yet here.",
     },
     {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
       alt: "Travel Memories",
       category: "Travel Memories",
       subtext: "Not just places, but pauses, streets you wandered, sunsets you lingered, rooms you returned to. Memories shaped into motion, so the feeling travels back with you.",
+    },
+    {
+      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Birthday.png",
+      alt: "Birthdays",
+      category: "Birthdays",
+      subtext: "Wishes captured on video, smiles you didn’t notice, photographs that move again, and messages meant for another time, gathered into one unfolding story.",
     },
   ]
 
