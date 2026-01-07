@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar"
+import Script from "next/script"
 import { Hero } from "@/components/hero"
 
 import { Offering } from "@/components/offering"
@@ -20,6 +21,19 @@ export default function Home() {
 
       <Privacy />
       <Footer />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-3QT3EL5J28"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3QT3EL5J28');
+        `}
+      </Script>
     </main>
   )
 }
