@@ -24,7 +24,7 @@ export function Navbar() {
       <div className="container mx-auto px-2 md:px-6 lg:px-12 py-6 flex items-center justify-between">
         <Link href="/" className="block relative h-[35px] w-[140px] md:h-12 md:w-48 ml-2 md:ml-0">
           <img
-            src="https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Kahaania+Transparent2.png"
+            src="/kahaania-logo.png"
             alt="Kahaania"
             className="object-contain w-full h-full"
           />
