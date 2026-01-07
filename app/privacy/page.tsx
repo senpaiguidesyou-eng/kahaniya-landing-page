@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import Script from "next/script"
 
 export default function PrivacyPage() {
     return (
@@ -177,6 +178,19 @@ export default function PrivacyPage() {
             </section>
 
             <Footer />
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-3QT3EL5J28"
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3QT3EL5J28');
+        `}
+            </Script>
         </main>
     )
 }
