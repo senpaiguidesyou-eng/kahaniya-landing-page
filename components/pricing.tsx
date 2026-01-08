@@ -31,7 +31,7 @@ export function Pricing() {
                         <div className="space-y-2">
                             <span className="text-[#f1c60d] font-serif text-lg block">Moment</span>
                             <p className="text-zinc-400 text-sm max-w-[250px]">
-                                A short cinematic clip capturing a core memory such as a sunset, a message from someone you love, a shared laugh, or a moment you wish time would pause on.
+                                A short cinematic clip (Video/Photo) capturing a core memory such as a sunset, a message from someone you love, a shared laugh, or a moment you wish time would pause on.
                             </p>
                         </div>
                     </div>

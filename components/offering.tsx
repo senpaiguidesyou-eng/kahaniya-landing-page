@@ -1,35 +1,34 @@
 "use client"
 
-import { Sparkles, Lock, ChevronLeft, ChevronRight } from "lucide-react"
+import { Link as LinkIcon, Sparkles, Lock, ChevronLeft, ChevronRight } from "lucide-react"
+import Link from "next/link"
 import { useState, useEffect } from "react"
 
 export function Offering() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const images = [
-    {
-      src: "/images/priyaflix-love-story.jpg",
-      alt: "For Your Loved Ones",
-      category: "For Your Loved Ones",
-      subtext: "The moments that turned you and me into us.",
-    },
+
     {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Future.jpg",
       alt: "Stories Meant for Later",
       category: "Stories Meant for Later",
       subtext: "Notes, memories, and moments saved for a time not yet here.",
-    },
-    {
-      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
-      alt: "Travel Memories",
-      category: "Travel Memories",
-      subtext: "Not just places, but pauses, streets you wandered, sunsets you lingered, rooms you returned to. Memories shaped into motion, so the feeling travels back with you.",
+      link: "https://app.kahaania.com/arshita-joshi-AJ25",
     },
     {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Birthday.png",
       alt: "Birthdays",
       category: "Birthdays",
       subtext: "Wishes captured on video, smiles you didn’t notice, photographs that move again, and messages meant for another time, gathered into one unfolding story.",
+      link: "https://app.kahaania.com/sameer-pasha-life-moments-SP30X",
+    },
+    {
+      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
+      alt: "Travel Memories",
+      category: "Travel Memories",
+      subtext: "Not just places, but pauses, streets you wandered, sunsets you lingered, rooms you returned to. Memories shaped into motion, so the feeling travels back with you.",
+      link: "https://app.kahaania.com/rahul-travel-diaries-RK20",
     },
   ]
 
@@ -124,6 +123,15 @@ export function Offering() {
             <p className="text-white text-base md:text-lg font-normal">
               {images[currentSlide].subtext}
             </p>
+            <div className="flex justify-center w-full">
+              <Link
+                href={images[currentSlide].link}
+                target="_blank"
+                className="mt-20 text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-4 py-1.5 rounded"
+              >
+                Watch Their Kahaania
+              </Link>
+            </div>
           </div>
         </div>
       </div>
