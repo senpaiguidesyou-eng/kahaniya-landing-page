@@ -4,11 +4,12 @@ import { Link as LinkIcon, Sparkles, Lock, ChevronLeft, ChevronRight } from "luc
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
+import { ProcessHorizontal } from "./process-horizontal"
+
 export function Offering() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const images = [
-
     {
       src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Future.jpg",
       alt: "Stories Meant for Later",
@@ -63,11 +64,7 @@ export function Offering() {
       </div>
 
       <div className="container mx-auto max-w-7xl relative z-10">
-
-
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
-
-
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 mb-24">
           {/* Left Column - Wrapper for Carousel */}
           <div className="relative group w-full lg:w-3/5">
             <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
@@ -129,11 +126,13 @@ export function Offering() {
                 target="_blank"
                 className="mt-20 text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-4 py-1.5 rounded"
               >
-                Watch Their Kahaania
+                Watch Kahaania
               </Link>
             </div>
           </div>
         </div>
+
+        <ProcessHorizontal />
       </div>
     </section>
   )

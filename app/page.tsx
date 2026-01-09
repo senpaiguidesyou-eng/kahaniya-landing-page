@@ -6,7 +6,7 @@ import { Offering } from "@/components/offering"
 
 
 
-import { Privacy } from "@/components/privacy"
+
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
 
 
 
-      <Privacy />
+
       <Footer />
 
     </main>
