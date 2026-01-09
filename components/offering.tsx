@@ -67,7 +67,7 @@ export function Offering() {
         <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 mb-24">
           {/* Left Column - Wrapper for Carousel */}
           <div className="relative group w-full lg:w-3/5">
-            <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
+            <div className="relative overflow-hidden rounded-lg shadow-2xl p-2 md:p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
               {images.map((image, index) => (
                 <img
                   key={index}
