@@ -11,21 +11,21 @@ export function Offering() {
 
   const images = [
     {
-      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Future.jpg",
+      src: "/images/future-kids.jpg",
       alt: "Stories Meant for Later",
       category: "Stories Meant for Later",
       subtext: "Notes, memories, and moments saved for a time not yet here.",
       link: "https://app.kahaania.com/arshita-joshi-AJ25",
     },
     {
-      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Birthday.png",
+      src: "/images/birthday.png",
       alt: "Birthdays",
       category: "Birthdays",
       subtext: "Wishes captured on video, smiles you didn’t notice, photographs that move again, and messages meant for another time, gathered into one unfolding story.",
       link: "https://app.kahaania.com/sameer-pasha-life-moments-SP30X",
     },
     {
-      src: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Travel.png",
+      src: "/images/travel.png",
       alt: "Travel Memories",
       category: "Travel Memories",
       subtext: "Not just places, but pauses, streets you wandered, sunsets you lingered, rooms you returned to. Memories shaped into motion, so the feeling travels back with you.",
