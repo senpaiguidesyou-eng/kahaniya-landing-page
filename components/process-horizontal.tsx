@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { ContactModal } from "@/components/contact-modal"
 
 export function ProcessHorizontal() {
     const steps = [
@@ -64,12 +65,13 @@ export function ProcessHorizontal() {
             </div>
             {/* Begin Your Story Button */}
             <div className="flex justify-center mt-12 md:mt-16">
-                <Link
-                    href="/pricing"
-                    className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-6 py-3 md:px-8 md:py-3 rounded whitespace-nowrap"
-                >
-                    Begin Your Story
-                </Link>
+                <ContactModal>
+                    <button
+                        className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-6 py-3 md:px-8 md:py-3 rounded whitespace-nowrap"
+                    >
+                        Begin Your Story
+                    </button>
+                </ContactModal>
             </div>
         </div>
     )

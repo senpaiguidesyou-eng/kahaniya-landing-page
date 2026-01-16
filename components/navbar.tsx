@@ -30,17 +30,18 @@ export function Navbar() {
           />
         </Link>
         <div className="flex items-center gap-2 md:gap-8">
-          <Link
-            href="/pricing"
-            className="hidden md:block text-[10px] md:text-sm uppercase tracking-normal md:tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3 py-1 md:px-4 md:py-2 rounded whitespace-nowrap"
-          >
-            Begin Your Story
-          </Link>
           <ContactModal>
             <button
-              className="text-[10px] md:text-sm uppercase tracking-normal md:tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3 py-1 md:px-4 md:py-2 rounded mr-2 md:mr-0 whitespace-nowrap"
+              className="hidden md:block text-[10px] md:text-sm uppercase tracking-normal md:tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3 py-1 md:px-4 md:py-2 rounded whitespace-nowrap"
             >
-              Contact Us
+              Begin Your Story
+            </button>
+          </ContactModal>
+          <ContactModal>
+            <button
+              className="md:hidden text-[10px] md:text-sm uppercase tracking-normal md:tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-3 py-1 md:px-4 md:py-2 rounded mr-2 md:mr-0 whitespace-nowrap"
+            >
+              Begin Your Story
             </button>
           </ContactModal>
         </div>
