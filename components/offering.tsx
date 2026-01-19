@@ -4,10 +4,14 @@ import { Link as LinkIcon, Sparkles, Lock, ChevronLeft, ChevronRight, Play } fro
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-import { ProcessHorizontal } from "./process-horizontal"
+
+
+import useEmblaCarousel from "embla-carousel-react"
+import { motion } from "framer-motion"
 
 export function Offering() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, skipSnaps: false })
 
   const images = [
     {
@@ -48,12 +52,26 @@ export function Offering() {
   ]
 
   const nextSlide = () => {
+    if (emblaApi) emblaApi.scrollNext()
     setCurrentSlide((prev) => (prev + 1) % images.length)
   }
 
   const prevSlide = () => {
+    if (emblaApi) emblaApi.scrollPrev()
     setCurrentSlide((prev) => (prev - 1 + images.length) % images.length)
   }
+
+  // Sync embla slide change with currentSlide state
+  useEffect(() => {
+    if (!emblaApi) return
+    const onSelect = () => {
+      setCurrentSlide(emblaApi.selectedScrollSnap())
+    }
+    emblaApi.on("select", onSelect)
+    return () => {
+      emblaApi.off("select", onSelect)
+    }
+  }, [emblaApi])
 
   // Auto-rotate carousel every 5 seconds
   useEffect(() => {
@@ -61,12 +79,12 @@ export function Offering() {
       nextSlide()
     }, 5000)
     return () => clearInterval(timer)
-  }, [])
+  }, [emblaApi])
 
   return (
     <section id="offering" className="relative pt-0 pb-10 px-6 bg-zinc-950/30 -mt-10 scroll-mt-32">
       {/* Subtle star particles background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.02),transparent_50%)]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.02),transparent_50%)] pointer-events-none">
         <div
           className="absolute inset-0"
           style={{
@@ -78,54 +96,83 @@ export function Offering() {
       </div>
 
       <div className="container mx-auto max-w-7xl relative z-10">
-        {/* Mobile View - Vertical Stack */}
-        <div className="lg:hidden flex flex-col gap-12">
-          {images.map((image, index) => (
-            <div key={index} className="flex flex-col gap-6">
-              <Link href={image.link} target={image.link === "#" ? undefined : "_blank"} className="block relative group">
-                <div className="relative overflow-hidden rounded-lg shadow-2xl p-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
-                  <img
-                    src={image.src || "/placeholder.svg"}
-                    alt={image.alt}
-                    className="w-full h-auto"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
-                    <div className="w-12 h-12 border-2 border-[#f1c60d] bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
-                      <Play className="w-6 h-6 text-[#f1c60d] fill-[#f1c60d] ml-1" />
+        {/* Mobile View - Swipable Carousel */}
+        <div className="lg:hidden">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex">
+              {images.map((image, index) => (
+                <div key={index} className="flex-[0_0_90%] min-w-0 pl-4">
+                  <div className="flex flex-col gap-6">
+                    <Link href={image.link} target={image.link === "#" ? undefined : "_blank"} className="block relative group">
+                      <div className="relative overflow-hidden rounded-lg shadow-2xl p-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
+                        <img
+                          src={image.src || "/placeholder.svg"}
+                          alt={image.alt}
+                          className="w-full h-auto"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                          <div className="w-12 h-12 border-2 border-[#f1c60d] bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                            <Play className="w-6 h-6 text-[#f1c60d] fill-[#f1c60d] ml-1" />
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                    <div className="text-center px-4">
+                      <h3
+                        className="text-2xl font-serif text-[#f1c60d] font-bold mb-3"
+                        style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
+                      >
+                        {image.category}
+                      </h3>
+                      <p className="text-white text-base font-normal">
+                        {image.subtext}
+                      </p>
                     </div>
                   </div>
                 </div>
-              </Link>
-              <div className="text-center">
-                <h3
-                  className="text-2xl font-serif text-[#f1c60d] font-bold mb-3"
-                  style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
-                >
-                  {image.category}
-                </h3>
-                <p className="text-white text-base font-normal">
-                  {image.subtext}
-                </p>
-              </div>
+              ))}
             </div>
-          ))}
+          </div>
+          {/* Mobile Carousel Indicators */}
+          <div className="flex justify-center gap-2 mt-8">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => emblaApi?.scrollTo(index)}
+                className={`w-2 h-2 rounded-full transition-all ${index === currentSlide ? "bg-[#f1c60d] w-6" : "bg-white/30"
+                  }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Desktop View - Carousel */}
         <div className="hidden lg:flex flex-row justify-center items-center gap-16 mb-24">
           {/* Left Column - Wrapper for Carousel */}
           <div className="relative group w-3/5">
-            <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
-              {images.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.src || "/placeholder.svg"}
-                  alt={image.alt}
-                  className={`w-full h-auto transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
-                    }`}
-                />
-              ))}
-            </div>
+            <Link
+              href={images[currentSlide].link}
+              target="_blank"
+              className="block relative group"
+            >
+              <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
+                {images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.src || "/placeholder.svg"}
+                    alt={image.alt}
+                    className={`w-full h-auto transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
+                      }`}
+                  />
+                ))}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
+                  <div className="w-16 h-16 border-2 border-[#f1c60d] bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                    <Play className="w-8 h-8 text-[#f1c60d] fill-[#f1c60d] ml-1" />
+                  </div>
+                </div>
+              </div>
+            </Link>
 
             {/* Navigation Buttons */}
             <button
@@ -168,21 +215,11 @@ export function Offering() {
             <p className="text-white text-lg font-normal">
               {images[currentSlide].subtext}
             </p>
-            <div className="flex justify-start w-full">
-              <Link
-                href={images[currentSlide].link}
-                target="_blank"
-                className="mt-20 text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-4 py-1.5 rounded"
-              >
-                Watch Kahaania
-              </Link>
-            </div>
           </div>
         </div>
 
       </div>
-
-      <ProcessHorizontal />
     </section >
   )
 }
+

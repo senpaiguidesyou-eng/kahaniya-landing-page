@@ -21,10 +21,10 @@ export function ContactModal({ children }: ContactModalProps) {
                 <div className="p-8 md:p-10 flex flex-col items-center justify-center text-center space-y-8">
 
                     <h2
-                        className="font-serif text-lg sm:text-xl md:text-2xl text-white font-normal whitespace-nowrap"
+                        className="font-serif text-2xl md:text-3xl text-white font-normal"
                         style={{ fontFamily: 'var(--font-playfair), "Georgia", serif' }}
                     >
-                        Let’s talk about your Kahaania!
+                        Tell us your <span className="text-[#f1c60d]">Kahaani</span>.
                     </h2>
 
                     <a
