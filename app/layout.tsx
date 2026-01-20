@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { Playfair_Display } from "next/font/google"
 import "./globals.css"
+import { CSPostHogProvider } from "./providers"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -27,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans antialiased ${playfair.variable}`}>
-        {children}
-        <Analytics />
-        <GoogleAnalytics gaId="G-3QT3EL5J28" />
+        <CSPostHogProvider>
+          {children}
+          <Analytics />
+          <GoogleAnalytics gaId="G-3QT3EL5J28" />
+        </CSPostHogProvider>
       </body>
     </html>
   )
