@@ -21,20 +21,6 @@ export function Pricing() {
         <section id="pricing" className="relative py-24 px-6 bg-zinc-950/50">
             <div className="container mx-auto max-w-7xl space-y-16 md:space-y-20">
 
-                {/* Header & Value Proposition */}
-                <div className="text-center space-y-6 max-w-4xl mx-auto">
-                    <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-[#f1c60d] font-bold">
-                        A Home for Your Legacy
-                    </p>
-                    <h2 className="text-3xl md:text-5xl font-serif text-white leading-tight">
-                        Your memories are more than just <br className="hidden md:block" />
-                        <span className="text-[#f1c60d]">data in a folder.</span>
-                    </h2>
-                    <p className="text-zinc-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-                        In an era of endless scrolling and lost cloud backups, we provide a private, cinematic sanctuary for the stories that actually matter.
-                    </p>
-                </div>
-
                 {/* Value-Driven Call to Action (Instead of Pricing Grid) */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
@@ -51,7 +37,7 @@ export function Pricing() {
                                 <span className="text-[#f1c60d]">More Than a Price Tag.</span>
                             </h3>
                             <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                                Kahaania is a high-touch service where our narrative architects personally craft your legacy. No automated algorithms—just human artistry and a dedicated team for every story.
+                                Kahaania is a high-touch service where our narrative architects personally craft your legacy. No automated algorithms, just human artistry and a dedicated team for every story.
                             </p>
                         </div>
 

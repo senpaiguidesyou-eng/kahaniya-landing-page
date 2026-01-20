@@ -11,7 +11,7 @@ const faqs = [
     },
     {
         question: "How long does it take to build my Kahaani?",
-        answer: "Artisan curation takes time. Typically, your legacy site is ready within 7-10 business days. We'll provide a private review link as each chapter takes shape."
+        answer: "Artisan curation takes time. Typically, your legacy site is ready within 2 business days. We'll provide a private review link as each chapter takes shape."
     },
     {
         question: "Is my content private and secure?",

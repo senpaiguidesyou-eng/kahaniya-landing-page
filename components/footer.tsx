@@ -40,7 +40,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-zinc-900 text-center text-sm text-zinc-600">
-          <p>© 2025 Kahaania. Where memories become legacy.</p>
+          <p>© 2026 Kahaania. Where memories become legacy.</p>
         </div>
       </div>
     </motion.footer>
