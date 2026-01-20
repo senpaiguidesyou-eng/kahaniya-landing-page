@@ -1,190 +1,78 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import { Check } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { ContactModal } from "@/components/contact-modal"
+import { motion } from "framer-motion"
 
 export function Pricing() {
+    const [slots, setSlots] = useState(7)
+
+    useEffect(() => {
+        // Subtle realistic nudge: decrement a slot after 15 seconds
+        const timer = setTimeout(() => {
+            setSlots(prev => Math.max(prev - 1, 2))
+        }, 20000)
+        return () => clearTimeout(timer)
+    }, [])
+
     return (
         <section id="pricing" className="relative py-24 px-6 bg-zinc-950/50">
-            <div className="container mx-auto max-w-7xl space-y-20">
+            <div className="container mx-auto max-w-7xl space-y-16 md:space-y-20">
 
-                {/* Header & Definitions */}
-                <div className="text-center space-y-8 max-w-6xl mx-auto">
-                    <p className="text-sm uppercase tracking-[0.2em] text-[#f1c60d]">
-                        You pay once, it’s yours forever - No subscriptions. No auto-renewals
-                    </p>
+                {/* Value-Driven Call to Action (Instead of Pricing Grid) */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    className="relative max-w-4xl mx-auto"
+                >
+                    <div className="absolute inset-0 bg-linear-to-r from-[#f1c60d]/10 to-[#fcd432]/10 blur-3xl -z-10 pointer-events-none" />
 
-                    <div className="flex flex-col md:flex-row flex-wrap justify-center items-stretch gap-4 md:gap-6 text-left bg-transparent p-0 border-0">
-                        <div className="space-y-2 w-full p-6 rounded-xl border border-zinc-800 bg-zinc-900/20 md:bg-zinc-900/40 md:w-auto md:min-w-[300px]">
-                            <span className="text-[#f1c60d] font-serif text-lg block">Story</span>
-                            <p className="text-zinc-400 text-sm w-full md:max-w-[250px]">
-                                Your private Netflix-style website.<br /><br />
-                                This is the main website you get, where all your memories live together.
+                    <div className="bg-zinc-900/40 border border-[#f1c60d]/30 rounded-3xl p-8 md:p-16 text-center space-y-10 shadow-[0_0_50px_rgba(241,198,13,0.05)]">
+                        <div className="space-y-4">
+                            <h3 className="text-3xl md:text-5xl font-serif text-white leading-tight">
+                                Your Legacy Deserves <br />
+                                <span className="text-[#f1c60d]">More Than a Price Tag.</span>
+                            </h3>
+                            <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                                Kahaania is a high-touch service where our narrative architects personally craft your legacy. No automated algorithms, just human artistry and a dedicated team for every story.
                             </p>
                         </div>
 
-                        <div className="space-y-2 w-full p-6 rounded-xl border border-zinc-800 bg-zinc-900/20 md:bg-zinc-900/40 md:w-auto md:min-w-[340px]">
-                            <span className="text-[#f1c60d] font-serif text-lg block">Chapter</span>
-                            <div className="text-zinc-400 text-sm w-full md:max-w-[300px]">
-                                Each chapter represents one phase, theme, or period of your life.<br /><br />
-                                For example:
-                                <ul className="list-disc pl-4 mt-1 space-y-1">
-                                    <li>School Days</li>
-                                    <li>Japan Trip</li>
-                                    <li>Early days of Dating</li>
-                                    <li>London Days</li>
-                                </ul>
-                                <br />
-                                Every new chapter appears as a new row on your Kahaania homepage.
-                            </div>
-                        </div>
-
-                        <div className="space-y-2 w-full p-6 rounded-xl border border-zinc-800 bg-zinc-900/20 md:bg-zinc-900/40 md:w-auto md:min-w-[340px]">
-                            <span className="text-[#f1c60d] font-serif text-lg block">Moment</span>
-                            <div className="text-zinc-400 text-sm w-full md:max-w-[300px]">
-                                An individual memory inside a Chapter (like an episode).<br />
-                                A moment can be:
-                                <ul className="list-disc pl-4 mt-1 space-y-1">
-                                    <li>a video</li>
-                                    <li>a photo</li>
-                                    <li>a screenshot of whatsapp conversation</li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                {/* Mobile Pricing Header */}
-                <div className="md:hidden text-center mt-12 mb-6">
-                    <h3 className="text-2xl font-serif text-[#f1c60d]">Pricing</h3>
-                </div>
-
-                {/* Pricing Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-0 bg-transparent">
-
-                    {/* BASE */}
-                    <div className="relative flex flex-col p-8 md:p-10 border border-zinc-800 bg-zinc-900/20 md:rounded-l-2xl md:border-r-0 hover:bg-zinc-900/40 transition-colors">
-                        <div className="mb-6">
-                            <h3 className="font-serif text-2xl text-white mb-2">The First Chapter</h3>
-                            <p className="text-zinc-400 text-sm h-auto min-h-[4rem]">
-                                Everything you need to start your Kahaania.<br />
-                                Best if you’re creating your story for the first time.
-                            </p>
-                        </div>
-
-                        <div className="mb-8 pb-8 border-b border-zinc-800">
-                            <div className="flex flex-col">
-                                <div className="flex items-baseline gap-2">
-                                    <span className="text-lg md:text-xl text-zinc-500 line-through">₹4,000</span>
-                                    <span className="text-[32px] md:text-4xl font-light text-white">₹2,499</span>
-                                    <span className="text-zinc-500 text-sm">/ one-time</span>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left py-8 border-y border-zinc-800/50">
+                            {[
+                                { title: "Hand-Curated", desc: "Every video and photo is placed with intention by our design team." },
+                                { title: "Zero Maintenance", desc: "No subscriptions. No storage limits. Your legacy lives forever." },
+                                { title: "Private & Secure", desc: "Direct control over who sees your story. Encrypted and safe." }
+                            ].map((item, idx) => (
+                                <div key={idx} className="space-y-2">
+                                    <span className="text-[#f1c60d] font-bold text-sm uppercase tracking-widest">{item.title}</span>
+                                    <p className="text-zinc-500 text-sm leading-relaxed">{item.desc}</p>
                                 </div>
-                                <p className="text-[#f1c60d] text-xs font-medium uppercase tracking-wider mt-2">Early bird offer</p>
-                            </div>
-                        </div>
-
-                        <ul className="space-y-4 mb-8 flex-1">
-                            {[
-                                "Your private Kahaania website",
-                                "1 chapter (one row on the homepage)",
-                                "Up to 10 moments (videos or photos)",
-                                "Secure, password-protected access"
-                            ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                                    <Check className="w-4 h-4 text-[#f1c60d] mt-0.5 shrink-0" />
-                                    <span>{item}</span>
-                                </li>
                             ))}
-                        </ul>
-
-                        <ContactModal>
-                            <button className="w-full py-3 border border-[#f1c60d]/50 text-[#f1c60d] hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
-                                BEGIN YOUR STORY
-                            </button>
-                        </ContactModal>
-                    </div>
-
-                    {/* ADD-ON SERIES */}
-                    <div className="relative flex flex-col p-8 md:p-10 border border-zinc-800 bg-zinc-900/40 border-y md:border-x hover:bg-zinc-900/60 transition-colors z-10">
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#f1c60d] to-[#fcd432] text-black text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap">
-                            Most stories grow with time.
                         </div>
-                        <div className="mb-6">
-                            <h3 className="font-serif text-2xl text-white mb-2">Another Chapter</h3>
-                            <p className="text-zinc-400 text-sm h-auto min-h-[4rem]">
-                                Add a new chapter/new row to your existing Kahaania.<br />
-                                Perfect for new trips, milestones, or phases of life.
+
+                        <div className="space-y-6">
+                            <p className="text-zinc-500 text-sm italic">
+                                Due to the bespoke nature of our curation, we only take on 60 new stories each month.
                             </p>
-                        </div>
-
-                        <div className="mb-8 pb-8 border-b border-zinc-800">
-                            <div className="flex items-baseline gap-1">
-                                <span className="text-[32px] md:text-4xl font-light text-white">₹1,500</span>
-                                <span className="text-zinc-500 text-sm">/ per chapter</span>
+                            <ContactModal>
+                                <button className="inline-flex items-center justify-center px-10 py-5 bg-linear-to-r from-[#f1c60d] to-[#fcd432] text-black font-bold uppercase tracking-[0.2em] rounded-full hover:scale-105 transition-all shadow-[0_20px_40px_rgba(241,198,13,0.2)] active:scale-95 text-xs md:text-sm">
+                                    Request Your Personal Curation
+                                </button>
+                            </ContactModal>
+                            <div className="flex items-center justify-center gap-2 text-zinc-500 text-xs py-2">
+                                <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+                                {slots} slots remaining for {new Date().toLocaleString('default', { month: 'long' })}
                             </div>
                         </div>
-
-                        <ul className="space-y-4 mb-8 flex-1">
-                            {[
-                                "1 new chapter added to your website",
-                                "Up to 10 new moments",
-                                "Appears as a new row on your homepage",
-                                "Seamlessly added to your existing Kahaania"
-                            ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                                    <Check className="w-4 h-4 text-[#f1c60d] mt-0.5 shrink-0" />
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-
-                        <ContactModal>
-                            <button className="w-full py-3 border border-[#f1c60d]/50 text-[#f1c60d] hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
-                                ADD A CHAPTER
-                            </button>
-                        </ContactModal>
                     </div>
-
-                    {/* ENTERPRISE */}
-                    <div className="relative flex flex-col p-8 md:p-10 border border-zinc-800 bg-zinc-900/20 md:rounded-r-2xl md:border-l-0 hover:bg-zinc-900/40 transition-colors">
-                        <div className="mb-6">
-                            <h3 className="font-serif text-2xl text-white mb-2">Bespoke Stories</h3>
-                            <p className="text-zinc-400 text-sm h-auto min-h-[4rem]">
-                                For stories that don’t fit into a simple structure.<br />
-                                Ideal for large collections or family archives.
-                            </p>
-                        </div>
-
-                        <div className="mb-8 pb-8 border-b border-zinc-800">
-                            <div className="flex items-baseline gap-1">
-                                <span className="text-[32px] md:text-4xl font-light text-white">Custom pricing</span>
-                            </div>
-                        </div>
-
-                        <ul className="space-y-4 mb-8 flex-1">
-                            {[
-                                "Large volumes of photos & videos",
-                                "Family histories or legacy projects",
-                                "Custom visual layout and flow",
-                                "End-to-end curation by the Kahaania team"
-                            ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
-                                    <Check className="w-4 h-4 text-[#f1c60d] mt-0.5 shrink-0" />
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-
-                        <ContactModal>
-                            <button className="w-full py-3 border border-[#f1c60d]/50 text-[#f1c60d] hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] hover:text-black transition-all text-sm uppercase tracking-wider rounded">
-                                TALK TO US
-                            </button>
-                        </ContactModal>
-                    </div>
-
-                </div>
+                </motion.div>
             </div>
         </section>
     )
 }
+
+

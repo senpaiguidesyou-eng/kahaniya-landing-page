@@ -67,9 +67,9 @@ export function ProcessHorizontal() {
             <div className="flex justify-center mt-12 md:mt-16">
                 <ContactModal>
                     <button
-                        className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-gradient-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-6 py-3 md:px-8 md:py-3 rounded whitespace-nowrap"
+                        className="text-xs md:text-sm uppercase tracking-wider text-[#f1c60d] hover:text-black transition-all border border-[#f1c60d]/50 hover:bg-linear-to-r hover:from-[#f1c60d] hover:to-[#fcd432] px-6 py-3 md:px-8 md:py-3 rounded whitespace-nowrap"
                     >
-                        Begin Your Story
+                        Request Your Curation
                     </button>
                 </ContactModal>
             </div>
