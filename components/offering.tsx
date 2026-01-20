@@ -2,6 +2,7 @@
 
 import { Link as LinkIcon, Sparkles, Lock, ChevronLeft, ChevronRight, Play } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 
 
@@ -83,11 +84,13 @@ export function Offering() {
           {images.map((image, index) => (
             <div key={index} className="flex flex-col gap-6">
               <Link href={image.link} target={image.link === "#" ? undefined : "_blank"} className="block relative group">
-                <div className="relative overflow-hidden rounded-lg shadow-2xl p-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
-                  <img
+                <div className="relative overflow-hidden rounded-lg shadow-2xl p-2 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 aspect-[16/9]">
+                  <Image
                     src={image.src || "/placeholder.svg"}
                     alt={image.alt}
-                    className="w-full h-auto"
+                    fill
+                    className="object-cover rounded-md"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
                     <div className="w-12 h-12 border-2 border-[#f1c60d] bg-black/30 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
@@ -115,33 +118,43 @@ export function Offering() {
         <div className="hidden lg:flex flex-row justify-center items-center gap-16 mb-24">
           {/* Left Column - Wrapper for Carousel */}
           <div className="relative group w-3/5">
-            <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800">
+            <div className="relative overflow-hidden rounded-lg shadow-2xl p-4 bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 aspect-[16/9]">
               {images.map((image, index) => (
-                <img
+                <div
                   key={index}
-                  src={image.src || "/placeholder.svg"}
-                  alt={image.alt}
-                  className={`w-full h-auto transition-opacity duration-500 ${index === currentSlide ? "opacity-100" : "opacity-0 absolute inset-0"
+                  className={`absolute inset-0 p-4 transition-opacity duration-500 ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
                     }`}
-                />
+                >
+                  <div className="relative w-full h-full rounded-md overflow-hidden">
+                    <Image
+                      src={image.src || "/placeholder.svg"}
+                      alt={image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1200px) 60vw, 50vw"
+                      priority={index === 0}
+                    />
+                  </div>
+                </div>
               ))}
             </div>
 
             {/* Navigation Buttons */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-20"
               aria-label="Previous slide"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-20"
               aria-label="Next slide"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
+
 
             {/* Carousel Indicators */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">

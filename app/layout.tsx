@@ -14,6 +14,22 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Kahaania",
   description: "The Archive of Your Life",
+  openGraph: {
+    title: "Kahaania | The Archive of Your Life",
+    description: "Turn your memories into a cinematic experience. Your life story, beautifully told.",
+    url: "https://kahaania.com",
+    siteName: "Kahaania",
+    images: [
+      {
+        url: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Kahaania+Plain+Black.png",
+        width: 1200,
+        height: 630,
+        alt: "Kahaania - Memory As A Service",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   icons: {
     icon: "https://kahaniya-memory-as-a-service.s3.us-east-1.amazonaws.com/public/thumbnails/Kahaania+Plain+Black.png",
   },
