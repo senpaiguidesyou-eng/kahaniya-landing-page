@@ -4,7 +4,7 @@ import { Link as LinkIcon, Sparkles, Lock, ChevronLeft, ChevronRight, Play } fro
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-import { ProcessHorizontal } from "./process-horizontal"
+
 
 export function Offering() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -182,7 +182,6 @@ export function Offering() {
 
       </div>
 
-      <ProcessHorizontal />
     </section >
   )
 }

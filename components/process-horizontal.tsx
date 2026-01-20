@@ -33,7 +33,7 @@ export function ProcessHorizontal() {
     ]
 
     return (
-        <div className="mt-16 md:mt-24 border-t border-zinc-900 pt-16">
+        <div className="mt-16 md:mt-24 border-t border-zinc-900 pt-16 relative z-10">
             <div className="text-center mb-12">
                 <h3 className="text-2xl md:text-4xl font-serif text-[#f1c60d] mb-4">From Moments to a Kahaania</h3>
             </div>
@@ -63,7 +63,7 @@ export function ProcessHorizontal() {
                     ))}
                 </div>
             </div>
-            {/* Begin Your Story Button */}
+            {/* Begin Your Story Button - Connected to WhatsApp Popup */}
             <div className="flex justify-center mt-12 md:mt-16">
                 <ContactModal>
                     <button

@@ -2,7 +2,10 @@ import { Navbar } from "@/components/navbar"
 import Script from "next/script"
 import { Hero } from "@/components/hero"
 
+
 import { Offering } from "@/components/offering"
+import { Testimonials } from "@/components/testimonials"
+import { ProcessHorizontal } from "@/components/process-horizontal"
 
 
 
@@ -16,6 +19,8 @@ export default function Home() {
       <Hero />
 
       <Offering />
+      <Testimonials />
+      <ProcessHorizontal />
 
 
 
