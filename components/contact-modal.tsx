@@ -28,7 +28,7 @@ export function ContactModal({ children }: ContactModalProps) {
                     </h2>
 
                     <a
-                        href="https://wa.me/+918667339365"
+                        href="https://wa.me/+919346071154"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white px-7 py-3 rounded-full transition-all duration-300 group text-sm"
