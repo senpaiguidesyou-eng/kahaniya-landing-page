@@ -8,25 +8,25 @@ export function ProductMockup() {
       <div className="container mx-auto max-w-5xl">
         <div className="relative group">
           {/* Mockup container */}
-          <div className="relative bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl aspect-video">
+          <div className="relative bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl aspect-video p-4">
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 space-y-4">
-              <Badge className="bg-amber-600/95 text-black border-0 backdrop-blur-sm font-semibold shadow-lg shadow-amber-600/30">
+              <Badge className="bg-gradient-to-r from-[#f1c60d]/95 to-[#fcd432]/95 text-black border-0 backdrop-blur-sm font-semibold shadow-lg shadow-[#f1c60d]/30">
                 Exclusive Collection
               </Badge>
 
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">Summer in Amalfi</h2>
 
               <div className="flex items-center gap-4 text-sm text-zinc-300">
-                <span className="font-semibold text-amber-100">2024</span>
-                <span className="w-1 h-1 bg-amber-700 rounded-full" />
+                <span className="font-semibold text-[#f1c60d]">2024</span>
+                <span className="w-1 h-1 bg-[#f1c60d] rounded-full" />
                 <span>4K HDR</span>
-                <span className="w-1 h-1 bg-amber-700 rounded-full" />
+                <span className="w-1 h-1 bg-[#f1c60d] rounded-full" />
                 <span>12 Intimate Chapters</span>
               </div>
 
-              <Button className="bg-amber-600 hover:bg-amber-500 text-black font-semibold mt-4 shadow-xl shadow-amber-600/40 transition-all duration-300">
+              <Button className="bg-gradient-to-r from-[#f1c60d] to-[#fcd432] hover:bg-[#f1c60d] text-black font-semibold mt-4 shadow-xl shadow-[#f1c60d]/40 transition-all duration-300 border-0">
                 <Play className="w-5 h-5 mr-2" />
                 Relive the Journey
               </Button>

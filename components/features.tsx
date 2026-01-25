@@ -37,8 +37,8 @@ export function Features() {
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="space-y-4 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-950/30 to-black border border-amber-900/30 flex items-center justify-center mx-auto shadow-lg shadow-amber-950/30">
-                <feature.icon className="w-8 h-8 text-amber-500" />
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f1c60d]/30 to-black border border-[#f1c60d]/30 flex items-center justify-center mx-auto shadow-lg shadow-[#f1c60d]/30">
+                <feature.icon className="w-8 h-8 text-[#f1c60d]" />
               </div>
               <h3 className="font-serif text-2xl font-semibold text-white">{feature.title}</h3>
               <p className="text-zinc-400 leading-relaxed">{feature.description}</p>
