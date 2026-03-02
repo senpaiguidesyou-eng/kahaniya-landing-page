@@ -3,18 +3,13 @@ import { LegalPageLayout } from "@/components/legal-page-layout"
 const pricingRows = [
   {
     service: "Kahaania Memory Curation",
-    price: "Custom quote",
-    details: "Pricing depends on content volume, editing depth, and delivery scope.",
+    price: "Starting at ₹2,999",
+    details: "Final pricing depends on content volume, editing depth, and delivery scope.",
   },
   {
     service: "Add-on Services",
     price: "As applicable",
     details: "Additional requests are charged separately after confirmation.",
-  },
-  {
-    service: "Taxes",
-    price: "Extra",
-    details: "Applicable GST or statutory taxes are charged as per law.",
   },
 ]
 
@@ -27,8 +22,8 @@ export default function PricingPage() {
       <p className="text-zinc-500">Last updated: March 2, 2026</p>
 
       <p>
-        Kahaania services are custom and quote-based. Final charges are communicated and approved by you before any
-        payment is collected.
+        Kahaania services start at ₹2,999. Final charges are communicated and approved by you before any payment is
+        collected.
       </p>
 
       <div className="overflow-x-auto rounded-xl border border-zinc-800">
