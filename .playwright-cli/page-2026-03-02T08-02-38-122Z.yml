@@ -1,0 +1,488 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - main [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - link [ref=e9] [cursor=pointer]:
+              - /url: ./
+            - img [ref=e13]
+          - generic [ref=e15]:
+            - generic [ref=e17]:
+              - img [ref=e21]
+              - generic [ref=e23]:
+                - link "Choose a template" [ref=e25] [cursor=pointer]:
+                  - /url: ./#choose-a-template
+                  - paragraph [ref=e27]: Choose a template
+                - img [ref=e31]
+            - generic [ref=e34]:
+              - generic [ref=e37] [cursor=pointer]:
+                - img [ref=e40]
+                - img [ref=e43]
+              - img [ref=e47]
+        - generic [ref=e50]:
+          - generic [ref=e53]:
+            - paragraph [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]: I
+                - generic [ref=e60]: "n"
+                - generic [ref=e61]: t
+                - generic [ref=e62]: r
+                - generic [ref=e63]: o
+                - generic [ref=e64]: d
+                - generic [ref=e65]: u
+                - generic [ref=e66]: c
+                - generic [ref=e67]: i
+                - generic [ref=e68]: "n"
+                - generic [ref=e69]: g
+            - generic [ref=e71]:
+              - heading "Website Templates for" [level=1] [ref=e72]:
+                - generic [ref=e73]: Website
+                - generic [ref=e74]: Templates
+                - generic [ref=e75]: for
+              - heading "Wedding Invites" [level=1] [ref=e76]:
+                - generic [ref=e77]: Wedding
+                - generic [ref=e78]: Invites
+            - generic [ref=e80]:
+              - heading "Easy-to-customise, Effortless to Share," [level=2] [ref=e81]:
+                - generic [ref=e82]: Easy-to-customise,
+                - generic [ref=e83]: Effortless
+                - generic [ref=e84]: to
+                - generic [ref=e85]: Share,
+              - heading "Website Templates for your Big Day." [level=2] [ref=e86]:
+                - generic [ref=e87]: Website
+                - generic [ref=e88]: Templates
+                - generic [ref=e89]: for
+                - generic [ref=e90]: your
+                - generic [ref=e91]: Big
+                - generic [ref=e92]: Day.
+            - link "Choose a template" [ref=e93] [cursor=pointer]:
+              - /url: ./#choose-a-template
+              - paragraph [ref=e95]: Choose a template
+          - main [ref=e96]
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e106]
+              - paragraph [ref=e111]: New Releases
+            - img [ref=e116]
+            - img [ref=e120]
+          - generic [ref=e122]:
+            - heading "Designed for your BIG day. Easy-to-edit. Effortless to Share." [level=1] [ref=e125]
+            - heading "Pick a style. Add your story. Share in minutes" [level=2] [ref=e128]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - paragraph [ref=e134]: Select Category
+            - generic [ref=e135]:
+              - paragraph [ref=e139] [cursor=pointer]: All
+              - paragraph [ref=e143] [cursor=pointer]: Hindu Weddings
+              - paragraph [ref=e147] [cursor=pointer]: Christian Weddings
+              - paragraph [ref=e151] [cursor=pointer]: Sikh Weddings
+              - paragraph [ref=e155] [cursor=pointer]: Muslim Weddings
+              - paragraph [ref=e159] [cursor=pointer]: South-Indian Weddings
+              - paragraph [ref=e163] [cursor=pointer]: Save the date
+          - generic [ref=e164]:
+            - generic [ref=e167] [cursor=pointer]:
+              - link "Hindu Weddings" [ref=e169]:
+                - /url: ./product-card-city
+                - heading "Hindu Weddings" [level=6] [ref=e172]
+              - generic [ref=e186]:
+                - generic [ref=e187]:
+                  - generic:
+                    - generic:
+                      - paragraph: City
+                  - link "INR 3999" [ref=e190]:
+                    - /url: https://rzp.io/rzp/city
+                    - paragraph [ref=e193]: INR 3999
+                - generic [ref=e195]:
+                  - generic:
+                    - paragraph: Perfect for Hindu weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e198] [cursor=pointer]:
+              - link "Hindu Weddings" [ref=e200]:
+                - /url: ./product-card-beach
+                - heading "Hindu Weddings" [level=6] [ref=e203]
+              - generic [ref=e217]:
+                - generic [ref=e218]:
+                  - generic:
+                    - generic:
+                      - paragraph: Beach
+                  - link "INR 3999" [ref=e221]:
+                    - /url: https://rzp.io/rzp/beach
+                    - paragraph [ref=e224]: INR 3999
+                - generic [ref=e226]:
+                  - generic:
+                    - paragraph: Perfect for Hindu weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e229] [cursor=pointer]:
+              - link "Hindu Weddings" [ref=e231]:
+                - /url: ./product-card-mountain
+                - heading "Hindu Weddings" [level=6] [ref=e234]
+              - generic [ref=e248]:
+                - generic [ref=e249]:
+                  - generic:
+                    - generic:
+                      - paragraph: Mountain
+                  - link "INR 3999" [ref=e252]:
+                    - /url: https://rzp.io/rzp/mountain
+                    - paragraph [ref=e255]: INR 3999
+                - generic [ref=e257]:
+                  - generic:
+                    - paragraph: Perfect for Hindu weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e260] [cursor=pointer]:
+              - link "South Indian Weddings" [ref=e262]:
+                - /url: ./product-card-meenaya
+                - heading "South Indian Weddings" [level=6] [ref=e265]
+              - generic [ref=e279]:
+                - generic [ref=e280]:
+                  - generic:
+                    - generic:
+                      - paragraph: Meenaya
+                  - link "INR 3999" [ref=e283]:
+                    - /url: https://rzp.io/rzp/meenaaya
+                    - paragraph [ref=e286]: INR 3999
+                - generic [ref=e288]:
+                  - generic:
+                    - paragraph: Perfect for South-Indian weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e291] [cursor=pointer]:
+              - link "Sikh Weddings" [ref=e293]:
+                - /url: ./product-card-laavan
+                - heading "Sikh Weddings" [level=6] [ref=e296]
+              - generic [ref=e310]:
+                - generic [ref=e311]:
+                  - generic:
+                    - generic:
+                      - paragraph: Laavan
+                  - link "INR 3999" [ref=e314]:
+                    - /url: https://rzp.io/rzp/laavan
+                    - paragraph [ref=e317]: INR 3999
+                - generic [ref=e319]:
+                  - generic:
+                    - paragraph: Perfect for Sikh weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e322] [cursor=pointer]:
+              - link "Muslim Weddings" [ref=e324]:
+                - /url: ./product-card-raabta
+                - heading "Muslim Weddings" [level=6] [ref=e327]
+              - generic [ref=e341]:
+                - generic [ref=e342]:
+                  - generic:
+                    - generic:
+                      - paragraph: Raabta
+                  - link "INR 3999" [ref=e345]:
+                    - /url: https://rzp.io/rzp/raabta
+                    - paragraph [ref=e348]: INR 3999
+                - generic [ref=e350]:
+                  - generic:
+                    - paragraph: Perfect for Muslim weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e353] [cursor=pointer]:
+              - link "Christian Weddings" [ref=e355]:
+                - /url: ./product-card-whimsical
+                - heading "Christian Weddings" [level=6] [ref=e358]
+              - generic [ref=e372]:
+                - generic [ref=e373]:
+                  - generic:
+                    - generic:
+                      - paragraph: Whimsical
+                  - link "INR 3999" [ref=e376]:
+                    - /url: https://rzp.io/rzp/whimsical
+                    - paragraph [ref=e379]: INR 3999
+                - generic [ref=e381]:
+                  - generic:
+                    - paragraph: Perfect for Christian weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e384] [cursor=pointer]:
+              - link "Hindu Weddings" [ref=e386]:
+                - /url: ./product-card-city-2
+                - heading "Hindu Weddings" [level=6] [ref=e389]
+              - generic [ref=e403]:
+                - generic [ref=e404]:
+                  - generic:
+                    - generic:
+                      - paragraph: City 2
+                  - link "INR 3999" [ref=e407]:
+                    - /url: https://rzp.io/rzp/city2
+                    - paragraph [ref=e410]: INR 3999
+                - generic [ref=e412]:
+                  - generic:
+                    - paragraph: Perfect for Hindu weddings — effortless to edit, share. Designed to feel completely yours.
+            - generic [ref=e415] [cursor=pointer]:
+              - link "Save the date" [ref=e417]:
+                - /url: ./product-card-save-the-date-city-2
+                - heading "Save the date" [level=6] [ref=e420]
+              - generic [ref=e434]:
+                - generic [ref=e435]:
+                  - generic:
+                    - generic:
+                      - paragraph: Save the date (City 2)
+                  - link "INR 1999" [ref=e438]:
+                    - /url: https://rzp.io/rzp/savethedatecity2
+                    - paragraph [ref=e441]: INR 1999
+                - generic [ref=e443]:
+                  - generic:
+                    - paragraph: Perfect for any wedding — effortless to edit, share. Designed to feel completely yours.
+      - generic [ref=e445]:
+        - generic [ref=e447]:
+          - generic [ref=e448]:
+            - img [ref=e452]
+            - paragraph [ref=e457]: Features
+          - img [ref=e462]
+          - img [ref=e466]
+        - generic [ref=e469]:
+          - generic [ref=e470]:
+            - generic [ref=e471]:
+              - heading "The Wedding Invite, Reinvented." [level=1] [ref=e473]
+              - heading "Mobile-first, effortless to share. Costs less than printed cards, but feels far more premium." [level=2] [ref=e475]
+            - link "Choose a template" [ref=e478] [cursor=pointer]:
+              - /url: ./#choose-a-template
+              - paragraph [ref=e480]: Choose a template
+          - generic [ref=e481]:
+            - generic [ref=e484]:
+              - img [ref=e488]
+              - generic [ref=e493]:
+                - paragraph [ref=e495]: Cost
+                - paragraph [ref=e497]: Cheaper than most WhatsApp and printed invites *
+            - generic [ref=e500]:
+              - img [ref=e504]
+              - generic [ref=e509]:
+                - paragraph [ref=e511]: Elder-Friendly Design
+                - paragraph [ref=e513]: No more squinting at tiny-boring whatsapp videos
+            - generic [ref=e516]:
+              - img [ref=e520]
+              - generic [ref=e525]:
+                - paragraph [ref=e527]: Pre-Wedding Highlight
+                - paragraph [ref=e529]: Showcase your shoot like never before
+            - generic [ref=e532]:
+              - img [ref=e536]
+              - generic [ref=e541]:
+                - paragraph [ref=e543]: Instant Edits
+                - paragraph [ref=e545]: Any change? Update anything instantly even after sharing
+            - generic [ref=e548]:
+              - img [ref=e552]
+              - generic [ref=e557]:
+                - paragraph [ref=e559]: Ritual-Ready Templates
+                - paragraph [ref=e561]: Includes deities and editable mantras (Hindu Wedding Only)
+            - generic [ref=e564]:
+              - img [ref=e568]
+              - generic [ref=e573]:
+                - paragraph [ref=e575]: Private Event Pages
+                - paragraph [ref=e577]: Invite different guests to different events
+      - generic [ref=e578]:
+        - generic [ref=e579]:
+          - heading "Create a Stunning Wedding Invite Website in 10 Minutes" [level=1] [ref=e582]:
+            - text: Create a Stunning Wedding Invite
+            - text: Website in 10 Minutes
+          - heading "Easily change everything — text, photos, layout, colors — and make your love story the star." [level=2] [ref=e585]
+        - generic [ref=e586]:
+          - generic [ref=e591]:
+            - heading "1 - Choose a template" [level=3] [ref=e593]
+            - heading "Choose a design that fits your wedding aesthetics" [level=4] [ref=e595]
+          - generic [ref=e606]:
+            - heading "2 - Customise & Publish" [level=3] [ref=e608]
+            - heading "Add your story, event details, hit publish." [level=4] [ref=e610]
+          - generic [ref=e620]:
+            - heading "3 - Share anywhere" [level=3] [ref=e622]
+            - heading "Share your invite with friends and family" [level=4] [ref=e624]
+        - link "Choose a template" [ref=e631] [cursor=pointer]:
+          - /url: ./#choose-a-template
+          - paragraph [ref=e633]: Choose a template
+      - generic [ref=e635]:
+        - generic [ref=e636]:
+          - heading "What Cards and Video Invites Can’t Do (But These Templates Can)" [level=1] [ref=e639]
+          - heading "See how your invite can go from one-time share to a lasting experience — without extra cost or hassle." [level=2] [ref=e642]
+        - generic [ref=e645]:
+          - generic [ref=e646]:
+            - generic [ref=e647]:
+              - paragraph [ref=e651]: Printed Cards
+              - paragraph [ref=e654]: Whatsapp Videos
+            - generic [ref=e658]:
+              - generic [ref=e659]:
+                - img [ref=e662]
+                - paragraph [ref=e665]: Cost
+              - paragraph [ref=e668]: High
+              - paragraph [ref=e671]: Moderate
+              - paragraph [ref=e674]: Low
+          - img [ref=e677]
+          - generic [ref=e678]:
+            - paragraph [ref=e682]: Customization
+            - paragraph [ref=e685]: Limited
+            - paragraph [ref=e688]: Hard
+            - paragraph [ref=e691]: Easy
+          - img [ref=e694]
+          - generic [ref=e695]:
+            - paragraph [ref=e699]: Interactivity
+            - paragraph [ref=e702]: Static
+            - paragraph [ref=e705]: View-only
+            - paragraph [ref=e708]: Responsive
+          - img [ref=e711]
+          - generic [ref=e712]:
+            - paragraph [ref=e716]: Updating
+            - paragraph [ref=e719]: Impossible
+            - paragraph [ref=e722]: Difficult
+            - paragraph [ref=e725]: Instant
+        - link "Choose a template" [ref=e728] [cursor=pointer]:
+          - /url: ./#choose-a-template
+          - paragraph [ref=e730]: Choose a template
+      - generic [ref=e731]:
+        - generic [ref=e734]:
+          - generic [ref=e735]:
+            - img [ref=e739]
+            - paragraph [ref=e744]: Testimonials
+          - img [ref=e749]
+          - img [ref=e753]
+        - generic [ref=e755]:
+          - generic [ref=e756]:
+            - heading "Don’t Take Our Word for It — Here’s What Real Couples Are Saying" [level=1] [ref=e759]
+            - heading "One link. Endless compliments." [level=2] [ref=e762]
+          - list [ref=e766]:
+            - listitem [ref=e767]
+            - listitem [ref=e774]
+            - listitem [ref=e781]
+            - listitem [ref=e788]
+            - listitem [ref=e795]
+            - listitem [ref=e802]
+            - listitem [ref=e809]
+          - link "Choose a template" [ref=e818] [cursor=pointer]:
+            - /url: ./#choose-a-template
+            - paragraph [ref=e820]: Choose a template
+      - generic [ref=e821]:
+        - generic [ref=e822]:
+          - generic [ref=e823]:
+            - heading "Questions ? Answers." [level=1] [ref=e827]
+            - generic [ref=e828]:
+              - generic [ref=e833]:
+                - paragraph [ref=e839] [cursor=pointer]: Do I need a software to edit these templates ?
+                - paragraph [ref=e842]: These templates run on Framer and are built to edit as easily as filling out a simple form — most people finish everything in under 10 minutes.
+              - generic [ref=e847]:
+                - paragraph [ref=e853] [cursor=pointer]: What is Framer ?
+                - paragraph [ref=e856]: Framer is a free, easy-to-use website builder—no coding needed. Just drag, drop, and publish a stunning site in minutes.
+              - generic [ref=e861]:
+                - paragraph [ref=e867] [cursor=pointer]: Will this open like a website ?
+                - paragraph [ref=e870]: "Yes. Once published your guests will be able to see your invite like a dynamic website: Interactable, complete with links to venue location, RSVP, and wedding Instagram."
+              - generic [ref=e875]:
+                - paragraph [ref=e881] [cursor=pointer]: What if I want to split guests by event ?
+                - paragraph [ref=e884]: The template has an easy provision to create as many event combinations as you need. That way you'll be able to call separate guests to separate events.
+              - generic [ref=e889]:
+                - paragraph [ref=e895] [cursor=pointer]: How do I get started ?
+                - paragraph [ref=e898]: We provide an 8 minute+ tutorial video to get you started. In brief - You can start with just a computer. Click the template link in your email after purchase—Then click on the tutorial video link in from the same email and simply follow the steps. Sign up, add your photos and text, and hit publish. It’s all free and fully editable—anytime & anywhere.
+              - generic [ref=e903]:
+                - paragraph [ref=e909] [cursor=pointer]: How long does it take to edit the invite ?
+                - paragraph [ref=e912]: Editing and sharing is super simple—just like filling a form. Add names, family details, events, photos, and links, and you’re ready to go. Most couples finish in just 10–20 minutes.
+              - generic [ref=e917]:
+                - paragraph [ref=e923] [cursor=pointer]: What happens after I buy the template?
+                - paragraph [ref=e926]: After you buy a template, you’ll get a “Remix” link by email. Click it to open the template in Framer. Sign up for a free account, and the template will be added to your workspace—ready to customize.
+              - generic [ref=e931]:
+                - paragraph [ref=e937] [cursor=pointer]: Can I purchase now and use it later ?
+                - paragraph [ref=e940]: Yes. You can purchase now and use it anytime in the future.
+              - generic [ref=e945]:
+                - paragraph [ref=e951] [cursor=pointer]: Can I purchase it using my phone ?
+                - paragraph [ref=e954]: Yes. You can purchase the template from any device and edit it on laptop using the link which will be sent to you on your email.
+              - generic [ref=e959]:
+                - paragraph [ref=e965] [cursor=pointer]: Is there an expiry to the template ?
+                - paragraph [ref=e968]: Once you complete your purchase, you’ll have lifetime access.
+              - generic [ref=e973]:
+                - paragraph [ref=e979] [cursor=pointer]: Will I need to buy a domain name ?
+                - paragraph [ref=e982]: "Short Answer: No need. Framer gives you a free web link (like anshwedsneha.framer.website). But if you want your own .com, that’s optional."
+              - generic [ref=e987]:
+                - paragraph [ref=e993] [cursor=pointer]: How do I add my details in the template?
+                - paragraph [ref=e996]: Simply follow the step-by-step video guide included with your purchase. In short—click on any text to edit, or on a photo to upload your own. That’s it!
+              - generic [ref=e1001]:
+                - paragraph [ref=e1007] [cursor=pointer]: Can I add music ?
+                - paragraph [ref=e1010]: YES - The template allows you to add any music of your choice as an .MP3 file
+              - generic [ref=e1015]:
+                - paragraph [ref=e1021] [cursor=pointer]: What's included in the template ?
+                - paragraph [ref=e1024]: "- Tutorial: Step-by-step video guide for easy editing - Event Cards: Customisable cards for bride & groom families - Custom Pages: Separate invite pages for each event - Photo Highlight: Showcase your pre-wedding shoot beautifully - Instant Edits: Update anytime, even after sharing - Smart Links: Built-in RSVP, venue maps & Instagram updates - Accessibility: Elder-friendly, no tiny text like WhatsApp videos - Information: Space for hashtag, parking, staff stay & more - Animations: Smooth scrolling effects to bring invites alive - God Motif: Lord Ganesha motif with an editable mantra option - Responsive: Works on laptop, tablet & phone seamlessly - Music: Upload any muisc of your choice"
+              - generic [ref=e1029]:
+                - paragraph [ref=e1035] [cursor=pointer]: Do I need to know coding to use this?
+                - paragraph [ref=e1038]: "Short Answer: Not at all. If you can use Canva or Instagram, you’ll find Framer as easy."
+              - generic [ref=e1043]:
+                - paragraph [ref=e1049] [cursor=pointer]: How do I share this with my guests?
+                - paragraph [ref=e1052]: "Short Answer: Once done, you get a simple link. Share it on WhatsApp, text, email — anything works."
+              - generic [ref=e1057]:
+                - paragraph [ref=e1063] [cursor=pointer]: How do my guests view the invite ?
+                - paragraph [ref=e1066]: Like they view any website—on their phone's browser, Safari, Chrome or whatever. It opens beautifully like a website on any device.
+              - generic [ref=e1071]:
+                - paragraph [ref=e1077] [cursor=pointer]: Can I preview before I share it ?
+                - paragraph [ref=e1080]: "Short Answer: Yes! Framer lets you preview everything on mobile and desktop before going live."
+              - generic [ref=e1085]:
+                - paragraph [ref=e1091] [cursor=pointer]: Can I make changes after sharing ?
+                - paragraph [ref=e1094]: "Short Answer: Absolutely. Change anything — venue, timings, any link — even after it’s published, and it updates for everyone instantly, no need to re-share the invite."
+              - generic [ref=e1099]:
+                - paragraph [ref=e1105] [cursor=pointer]: Do you make custom invites ?
+                - paragraph [ref=e1108]: No - We don’t make custom invites. Please tap the link in bio to buy a template of your choice.
+              - generic [ref=e1113]:
+                - paragraph [ref=e1119] [cursor=pointer]: Can I re-sell these template ?
+                - paragraph [ref=e1122]: No - These templates are protected under applicable copyright and intellectual property laws. Any unauthorized use, including but not limited to reselling, redistributing, sublicensing, copying, sharing, reverse-engineering, or modifying these templates, in whole or in part, is strictly prohibited. Any violation will be treated as a serious infringement and may result in immediate legal action, including but not limited to civil and criminal proceedings, monetary damages, statutory penalties, injunctive relief, and recovery of legal costs. We actively monitor misuse and enforce our rights to the fullest extent permitted by law.
+              - generic [ref=e1127]:
+                - paragraph [ref=e1133] [cursor=pointer]: What's the refund policy ?
+                - paragraph [ref=e1136]: Because this is a digital product, all sales are final and non-refundable. Please review the details carefully before purchasing. If you have any questions, feel free to contact us before placing your order.
+          - link "Any other question? Email Us" [ref=e1139] [cursor=pointer]:
+            - /url: mailto:hello@missingpiecedesign.com
+            - paragraph [ref=e1141]: Any other question? Email Us
+        - generic [ref=e1144]:
+          - generic [ref=e1146]:
+            - heading "Be the first to know when a new template drops" [level=1] [ref=e1148]
+            - heading "Stay updated on new template and feature releases." [level=2] [ref=e1150]
+          - generic [ref=e1151]:
+            - textbox [ref=e1154]:
+              - /placeholder: Email address
+            - button "Subscribe" [ref=e1156]:
+              - paragraph [ref=e1158]: Subscribe
+    - generic [ref=e1160]:
+      - generic [ref=e1161]:
+        - generic [ref=e1163]:
+          - heading "Website Templates for Wedding Invites" [level=1] [ref=e1166]
+          - generic [ref=e1167]:
+            - generic [ref=e1169]:
+              - paragraph [ref=e1173]:
+                - strong [ref=e1174]: Need any help ? We've got your back.
+              - paragraph [ref=e1177]:
+                - link "hello@missingpieceinvites.com" [ref=e1178] [cursor=pointer]:
+                  - /url: mailto:hello@missingpieceinvites.com
+            - generic [ref=e1179]:
+              - link [ref=e1180] [cursor=pointer]:
+                - /url: https://www.instagram.com/missingpieceinvites
+              - link [ref=e1183] [cursor=pointer]:
+                - /url: https://www.youtube.com/@MissingPieceInvites
+          - generic [ref=e1186]:
+            - paragraph [ref=e1189]: Information
+            - generic [ref=e1190]:
+              - paragraph [ref=e1193]:
+                - link "About Us" [ref=e1194] [cursor=pointer]:
+                  - /url: ./about-page
+              - paragraph [ref=e1197]:
+                - link "Contact us" [ref=e1198] [cursor=pointer]:
+                  - /url: ./contact-us
+              - paragraph [ref=e1201]:
+                - link "Privacy Policy" [ref=e1202] [cursor=pointer]:
+                  - /url: ./privacy-policy
+              - paragraph [ref=e1205]:
+                - link "Refund Policy" [ref=e1206] [cursor=pointer]:
+                  - /url: ./refund-policy
+              - paragraph [ref=e1209]:
+                - link "Terms" [ref=e1210] [cursor=pointer]:
+                  - /url: ./terms
+        - generic [ref=e1215] [cursor=pointer]:
+          - generic [ref=e1217]:
+            - generic [ref=e1218]:
+              - heading "Invite Your Guests in 10 Minutes!" [level=1] [ref=e1220]
+              - paragraph [ref=e1224]: Choose. Customise. Share.
+            - link "Choose a template" [ref=e1226]:
+              - /url: ./templates
+              - paragraph [ref=e1228]: Choose a template
+          - link [ref=e1229]:
+            - /url: ./templates
+      - generic [ref=e1233]:
+        - generic [ref=e1234]:
+          - link [ref=e1235] [cursor=pointer]:
+            - /url: ./
+          - img [ref=e1239]
+        - generic [ref=e1241]:
+          - generic [ref=e1243]:
+            - img [ref=e1247]
+            - generic [ref=e1249]:
+              - paragraph [ref=e1252]: © Missing Piece 2026
+              - img [ref=e1256]
+          - generic [ref=e1259]:
+            - paragraph [ref=e1265]: ®
+            - img [ref=e1269]
+  - img [ref=e1279]
+  - img [ref=e1281]
+  - img [ref=e1283]

@@ -1,0 +1,109 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Kahaania" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "Kahaania" [ref=e6]
+        - button "Request Early Access" [ref=e8]
+    - generic [ref=e10]:
+      - heading "Preserving Emotions, Not Just Files." [level=1] [ref=e11]:
+        - text: Preserving Emotions,
+        - text: Not Just Files.
+      - paragraph [ref=e12]: A private, cinematic Netflix themed website that turns your photos and videos into seasons and episodes. Because some moments are meant to stay.
+      - link "EXPLORE THE EXPERIENCE NOW" [ref=e14] [cursor=pointer]:
+        - /url: "#offering"
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - link "The Day We Got Societal & Legal Approval Digital Ads Birthdays Travel Memories This was meant to happen" [ref=e19] [cursor=pointer]:
+          - /url: https://app.kahaania.com/akhil-anushka-journey
+          - generic [ref=e20]:
+            - img "The Day We Got Societal & Legal Approval" [ref=e21]
+            - img "Digital Ads" [ref=e22]
+            - img "Birthdays" [ref=e23]
+            - img "Travel Memories" [ref=e24]
+            - img "This was meant to happen" [ref=e25]
+            - img [ref=e28]
+        - button "Previous slide" [ref=e30]:
+          - img [ref=e31]
+        - button "Next slide" [ref=e33]:
+          - img [ref=e34]
+        - generic [ref=e36]:
+          - button "Go to slide 1" [ref=e37]
+          - button "Go to slide 2" [ref=e38]
+          - button "Go to slide 3" [ref=e39]
+          - button "Go to slide 4" [ref=e40]
+          - button "Go to slide 5" [ref=e41]
+      - generic [ref=e42]:
+        - heading "Anniversaries" [level=3] [ref=e43]
+        - paragraph [ref=e44]: Turn your years together into a story with Kahaania.The laughs. The fights. The trips. The small routines. The way you slowly became “us.”
+    - generic [ref=e45]:
+      - heading "From Moments to a Kahaania" [level=3] [ref=e47]
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Step 1
+          - heading "Collect Your Moments" [level=4] [ref=e52]
+          - generic [ref=e53]:
+            - paragraph [ref=e54]: Videos, photographs, screenshots of conversations, anything you want to remember.
+            - paragraph [ref=e55]: Not sure what to pick?
+            - paragraph [ref=e56]: That’s completely okay. The Kahaania team is always here to help you decide what feels right.
+        - generic [ref=e57]:
+          - generic [ref=e58]: Step 2
+          - heading "Share With Us" [level=4] [ref=e59]
+          - paragraph [ref=e61]: Upload and share your content via Google Drive or email, and complete the one-time payment.
+        - generic [ref=e62]:
+          - generic [ref=e63]: Step 3
+          - heading "Receive Your Kahaania" [level=4] [ref=e64]
+          - generic [ref=e65]:
+            - paragraph [ref=e66]: Your private Kahaania is delivered as a secure website, protected with a password.
+            - paragraph [ref=e67]: It’s yours to revisit, share, whenever you want, for years to come.
+      - button "Request Your Curation" [ref=e69]
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - heading "Your Legacy Deserves More Than a Price Tag." [level=3] [ref=e75]:
+          - text: Your Legacy Deserves
+          - text: More Than a Price Tag.
+        - paragraph [ref=e76]: Kahaania is a high-touch service where our narrative architects personally craft your legacy. No automated algorithms, just human artistry and a dedicated team for every story.
+      - generic [ref=e77]:
+        - generic [ref=e78]:
+          - text: Hand-Curated
+          - paragraph [ref=e79]: Every video and photo is placed with intention by our design team.
+        - generic [ref=e80]:
+          - text: Zero Maintenance
+          - paragraph [ref=e81]: No subscriptions. No storage limits. Your legacy lives forever.
+        - generic [ref=e82]:
+          - text: Private & Secure
+          - paragraph [ref=e83]: Direct control over who sees your story. Encrypted and safe.
+      - generic [ref=e84]:
+        - paragraph [ref=e85]: Due to the bespoke nature of our curation, we only take on 60 new stories each month.
+        - button "Request Your Personal Curation" [ref=e86]
+        - generic [ref=e87]: 7 slots remaining for March
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - heading "Details for the Curious" [level=2] [ref=e92]
+        - paragraph [ref=e93]: How we weave your legacy with care.
+      - generic [ref=e94]:
+        - button "How do I share my photos and videos?" [ref=e96]:
+          - generic [ref=e97]: How do I share my photos and videos?
+          - img [ref=e98]
+        - button "How long does it take to build my Kahaani?" [ref=e100]:
+          - generic [ref=e101]: How long does it take to build my Kahaani?
+          - img [ref=e102]
+        - button "Is my content private and secure?" [ref=e104]:
+          - generic [ref=e105]: Is my content private and secure?
+          - img [ref=e106]
+        - button "Can I expand my story later?" [ref=e108]:
+          - generic [ref=e109]: Can I expand my story later?
+          - img [ref=e110]
+        - button "How does it look on mobile?" [ref=e112]:
+          - generic [ref=e113]: How does it look on mobile?
+          - img [ref=e114]
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - img "Kahaania" [ref=e120]
+        - generic [ref=e121]:
+          - link "Privacy" [ref=e122] [cursor=pointer]:
+            - /url: /privacy
+          - button "Contact" [ref=e123]
+      - paragraph [ref=e125]: © 2026 Kahaania. Where memories become legacy.
+  - alert [ref=e126]
