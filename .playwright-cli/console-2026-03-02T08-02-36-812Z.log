@@ -1,0 +1,12 @@
+[    1483ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.pixelflow.so/site/config/b59e07eabc4895e072e22a0c6fed670cfb9b89108aaee0defa6398c5d1f028e0:0
+[    1484ms] [ERROR] PixelFlow[fetchConfigFromAPI] Error: Error: Config API error: HTTP 401 
+    at https://slrgkgulru.pixelflow.so/pfm.js:1:30070
+    at async aG (https://slrgkgulru.pixelflow.so/pfm.js:1:31546)
+    at async aI (https://slrgkgulru.pixelflow.so/pfm.js:1:34254)
+    at async https://slrgkgulru.pixelflow.so/pfm.js:1:85557 @ https://slrgkgulru.pixelflow.so/pfm.js:0
+[    1484ms] [WARNING] PixelFlow: API fetch failed, attempting fallback to data attributes Error: Failed to fetch config from API and no cache available: Error: Config API error: HTTP 401 
+    at aG (https://slrgkgulru.pixelflow.so/pfm.js:1:31802)
+    at async aI (https://slrgkgulru.pixelflow.so/pfm.js:1:34254)
+    at async https://slrgkgulru.pixelflow.so/pfm.js:1:85557 @ https://slrgkgulru.pixelflow.so/pfm.js:0
+[    1484ms] [ERROR] PixelFlow: Failed to fetch config and no data attribute fallback available @ https://slrgkgulru.pixelflow.so/pfm.js:0
+[    1484ms] [ERROR] PixelFlow: Missing required configuration. Provide either full data attributes or API key. @ https://slrgkgulru.pixelflow.so/pfm.js:0
