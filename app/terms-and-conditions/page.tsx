@@ -109,6 +109,12 @@ export default function TermsAndConditionsPage() {
           getmykahaania@gmail.com
         </a>
       </p>
+      <p>
+        Phone:{" "}
+        <a className="text-[#f1c60d] hover:underline" href="tel:+919187561079">
+          +91-9187561079
+        </a>
+      </p>
       <p>Address: A1/12/3, Kamadhenu, 23rd Cross Street, Besant Nagar, Chennai, TAMIL NADU, 600090, India</p>
     </LegalPageLayout>
   )
